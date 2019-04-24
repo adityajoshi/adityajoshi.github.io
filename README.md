@@ -1,1 +1,1 @@
-# adityajoshi.github.io
+# Personal blog.

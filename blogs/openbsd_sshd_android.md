@@ -13,12 +13,16 @@ Commands
    ```
 * enable sshd</br>
   ```unix
-  sudo rcctl enable sshd
+  rcctl enable sshd
   ```
   </br> You should get reply something like this ```(sshd) ok ```
 * start sshd</br>
-  ``` sudo rcctl start sshd ```
+  ```unix
+  rcctl start sshd 
+  ```
 * check if sshd is running
-  ``` netstat -al | grep sshd ```
+  ```unix
+  netstat -al | grep sshd 
+  ```
 * know your ip
 * install ftp client on android.

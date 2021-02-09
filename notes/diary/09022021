@@ -1,0 +1,23 @@
+= 9th Feb 2021 =
+My today's target is to understand how an intranet application created in Spring boot will do user authentication in real-life.
+To be honest, I wasn't sure what exactly I need to query/search till yesterday. 
+The projects I checked were either had hard coded userid/pwd in code or had own mysql user setup which was then authenticated via Spring security.
+Although Spring security was a must for any Spring boot app, storing/fetching data from mysql db wasn't like an enterprise level project. 
+My approach to find the example project was wrong. 
+In morning I started asking myself how would an enterprise application built for my client will work ? 
+What would be their approach to implement authentication and authorization ?
+
+So far in my experience, I have seen that client likes to use Microsoft authentication / Office 365. 
+This in my opinion is because these intranet apps are basically part of major application suite that client uses or provides as a service/s to his client. 
+So it makes to have same security implementation everywhere. 
+
+If I am going to make an application similar to any enterprise one I have to follow same. So I narrowed my search to look for solutions that involve token based authentication.
+
+I found solution in [[https://www.keycloak.org/|Keycloak]]. It's an open source product design to allow single sign-on with Identity and Access Management aimed at modern applications and services.
+
+Though this is good, I need to find more on this.
+
+I want to implement it in app.
+App will be 2 page spring boot mvc app.
+First page will have sign-in/registration links.
+on successful login it should provide list of data from db.

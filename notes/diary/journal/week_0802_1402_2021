@@ -2,3 +2,4 @@
 
 == 09/02/2021 ==
 * [[https://www.keycloak.org/|keyclock]] - Found this product. Next step is to use it to implement login module in spring boot web app.
+* Ended up using github to track my notes and time. Only good thing in this is I am using vimwiki.

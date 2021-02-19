@@ -13,7 +13,7 @@ There are 2 approaches to solve this.
 2nd Approach is more efficient as in 1st approach you are going to traverse list twice. This may not be a problem for list with 10 elements but can cause when size increases.
 
 
-```
+```java
 import java.util.Optional;
 
 public class LinkedListMiddleElement {

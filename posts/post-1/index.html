@@ -94,37 +94,37 @@ To create new account visit <a href="https://www.oracle.com/cloud/free/">https:/
 <ol>
 <li>From Dashboard, find and select option &ldquo;Create an ATP database&rdquo;.</li>
 </ol>
-<p><img src="/20220207110632.png" alt="20220207110632"></p>
+<p><img src="/images/post1/20220207110632.png" alt="20220207110632"></p>
 <ol start="2">
 <li>This WIll open a form where you need to fill up information required to create a new DB. Select compartment where this database should reside, if not sure then keep default. Then provide name to be displayed and database name ( this will be further used when connecting. )</li>
 </ol>
-<p><img src="/20220207111436.png" alt="20220207111436.png"></p>
+<p><img src="/images/post1/20220207111436.png" alt="20220207111436.png"></p>
 <ol start="3">
 <li>Keep defaults, nothing to change here.</li>
 </ol>
-<p><img src="/20220207111514.png" alt="20220207111514.png"></p>
+<p><img src="/images/post1/20220207111514.png" alt="20220207111514.png"></p>
 <ol start="4">
 <li>Make sure the Always Free is enabled.</li>
 </ol>
-<p><img src="/20220207111547.png" alt="20220207111547.png"></p>
+<p><img src="/images/post1/20220207111547.png" alt="20220207111547.png"></p>
 <ol start="5">
 <li>Important section - you will have to provide password for ADMIN user ( note username is read-only ). Store it safely. This will be used to connect later.</li>
 </ol>
-<p><img src="/20220207111618.png" alt="20220207111618.png"></p>
+<p><img src="/images/post1/20220207111618.png" alt="20220207111618.png"></p>
 <ol start="6">
 <li>Again, Keep defaults :)</li>
 </ol>
-<p><img src="/20220207111645.png" alt="20220207111645.png"></p>
+<p><img src="/images/post1/20220207111645.png" alt="20220207111645.png"></p>
 <ol start="7">
 <li>You can provide email id in case you want to receive updates in future.</li>
 </ol>
-<p><img src="/20220207111722.png" alt="20220207111722.png"></p>
+<p><img src="/images/post1/20220207111722.png" alt="20220207111722.png"></p>
 <p>Once you click on &ldquo;Create Autonomous Database&rdquo;, it will take few minutes and your database will be ready to serve!</p>
 <h3 id="get-your-oracle-credentials-file-on-local">Get your Oracle Credentials file on local</h3>
 <p>We all know that in order to connect oracle db TNS entries are required, for our newly created db in cloud we will be downloading wallet ( client credentials ).</p>
 <p>To do that click on DB connections menu which will open pop-up like below. Click on Download wallet opion. This will download a zip file.
 Note - It will also ask you to setup a password to zip file. It&rsquo;s a good habit to set one.</p>
-<p><img src="/20220207112247.png" alt="20220207112247.png"></p>
+<p><img src="/images/post1/20220207112247.png" alt="20220207112247.png"></p>
 <h3 id="get-copy-of-native-oracle-sql-developer">Get copy of native Oracle SQL Developer</h3>
 <p>Download Oracle SQL Developer from below link if you don&rsquo;t have.
 <a href="https://www.oracle.com/tools/downloads/sqldev-downloads.html#license-lightbox">https://www.oracle.com/tools/downloads/sqldev-downloads.html#license-lightbox</a></p>
@@ -132,7 +132,7 @@ Note - It will also ask you to setup a password to zip file. It&rsquo;s a good h
 <p>Once you have download, extract and run Oracle SQL Developer, right click on Oracle connection and select &ldquo;New Connection&rdquo;.</p>
 <p>This should open a popup window like below. Fill up Name you want. &ldquo;Username&rdquo; will be &ldquo;ADMIN&rdquo; ( READ-ONLY from setup) and Password will your own password you configured when creating database.</p>
 <p>For connection type change it to Cloud Wallet and in Configuration File select the zip file you had downloaded in above step.</p>
-<p><img src="/20220207113120.png" alt="20220207113120.png"></p>
+<p><img src="/images/post1/20220207113120.png" alt="20220207113120.png"></p>
 <p>Once done, test your connection and save. 
 In case of any problem, go through these steps again to see what went wrong or missed out.</p>
 

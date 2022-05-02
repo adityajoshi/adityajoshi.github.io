@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 12 Feb 2022 09:07:23 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 May 2022 09:07:23 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create Oracle database in Oracle Free Tier Cloud</title>
-      <link>https://adityajoshi.github.io/posts/post-9/</link>
-      <pubDate>Sat, 12 Feb 2022 09:07:23 +0530</pubDate>
+      <link>https://adityajoshi.github.io/posts/post-1/</link>
+      <pubDate>Mon, 02 May 2022 09:07:23 +0530</pubDate>
       
-      <guid>https://adityajoshi.github.io/posts/post-9/</guid>
+      <guid>https://adityajoshi.github.io/posts/post-1/</guid>
       <description>If you want to work on oracle db but don&amp;rsquo;t want to do setup or worry about performance of it in your machine then I would recommend you to try oracle ATP database in cloud. Setting up new database and connecting with your trusty Oracle SQL Developer IDE is fairly simple. This guide will walk you through same.
 Prerequisite : You will need Oracle Cloud Free Tier Account to get started.</description>
     </item>

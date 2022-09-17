@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
     <loc>https://adityajoshi.github.io/</loc>
-    <lastmod>2022-05-02T09:07:23+05:30</lastmod>
-  </url><url>
+    <lastmod>2022-09-17T22:58:11+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adityajoshi.github.io/posts/</loc>
+    <lastmod>2022-09-17T22:58:11+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adityajoshi.github.io/posts/post-2/</loc>
+    <lastmod>2022-09-17T22:58:11+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://adityajoshi.github.io/posts/post-1/</loc>
     <lastmod>2022-05-02T09:07:23+05:30</lastmod>
-  </url><url>
-    <loc>https://adityajoshi.github.io/posts/</loc>
-    <lastmod>2022-05-02T09:07:23+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://adityajoshi.github.io/about/</loc>
-    <lastmod>2019-04-19T21:37:58+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://adityajoshi.github.io/tags/</loc>
   </url>
+  
 </urlset>

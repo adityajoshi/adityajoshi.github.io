@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 17 Sep 2022 22:58:11 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Sep 2022 12:42:54 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Change Git Remote URL via terminal</title>
+      <link>https://adityajoshi.github.io/posts/post-3/</link>
+      <pubDate>Sun, 18 Sep 2022 12:42:54 +0530</pubDate>
+      
+      <guid>https://adityajoshi.github.io/posts/post-3/</guid>
+      <description>I used to clone github repositories with https link. We could use our github credentials with Git command line.
+However as of August 21, Github has removed support for using your account password from Git command line.
+That means you either need to generate Personal Access Tokens or configure repo with ssh keys.
+I prefer 2nd option and that would mean that I need to change remote url in my checkout repo.</description>
+    </item>
+    
     <item>
       <title>Reduce Thinkpad&#39;s trackpoint sluggishness on Linux</title>
       <link>https://adityajoshi.github.io/posts/post-2/</link>

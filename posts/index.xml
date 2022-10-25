@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 19 Sep 2022 23:14:34 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Oct 2022 08:45:13 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configure xdg-open for a File or URL</title>
+      <link>https://adityajoshi.github.io/posts/post-5/</link>
+      <pubDate>Tue, 25 Oct 2022 08:45:13 +0530</pubDate>
+      
+      <guid>https://adityajoshi.github.io/posts/post-5/</guid>
+      <description>If you are using linux machine chances are that you are already using xdg-open.
+xdg-open is a utility used by system to open a file or URL in the user&amp;rsquo;s preferred application.
+To run a specific program for a given type of file or URL all you have to do is create a .dekstop file and configure so that xdg-open can run mentioned program for you.
+To do that create first a desktop file.</description>
+    </item>
+    
     <item>
       <title>Solve Git submodule Update Error</title>
       <link>https://adityajoshi.github.io/posts/post-4/</link>

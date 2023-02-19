@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aditya Joshi&#39;s Blog</title>
+    <title>Aditya&#39;s Webpage </title>
     <link>https://adityajoshi.github.io/</link>
-    <description>Recent content on Aditya Joshi&#39;s Blog</description>
+    <description>Recent content on Aditya&#39;s Webpage </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
@@ -65,13 +65,14 @@ Prerequisite : You will need Oracle Cloud Free Tier Account to get started.</des
     </item>
     
     <item>
-      <title>Hello!</title>
+      <title>Thanks for stopping by!</title>
       <link>https://adityajoshi.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://adityajoshi.github.io/about/</guid>
-      <description>My name is Aditya Joshi. I am a software developer. I have been working in software industry for over a decade in server side technologies like Java, SQL, Python, Unix, Docker, Kubernetes and Redhat OpenShift.
-You can email me or reach out on linkedin.</description>
+      <description>My name is Aditya Joshi. I am a software developer. On this blog I share knowledge and experience that I gathered by working 10+ years as developer at IT industry.
+Countless times various articles or blog posts helped me, so its time to give back.
+You can reach me on email or on linkedin.</description>
     </item>
     
   </channel>

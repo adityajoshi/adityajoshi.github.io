@@ -2,23 +2,28 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Hugo shortcodes - Aditya Joshi&#39;s Blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta itemprop="name" content="Hugo shortcodes">
-<meta itemprop="description" content="Here is a demo of all shortcodes available in Hugo."><meta itemprop="datePublished" content="2018-03-18T12:13:36+05:30" />
-<meta itemprop="dateModified" content="2018-03-18T12:13:36+05:30" />
-<meta itemprop="wordCount" content="33"><meta itemprop="image" content="https://images.unsplash.com/photo-1560032779-0a8809186efd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-<meta itemprop="keywords" content="" /><meta property="og:title" content="Hugo shortcodes" />
-<meta property="og:description" content="Here is a demo of all shortcodes available in Hugo." />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Docker setup on mx linux - Aditya&#39;s Webpage </title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Docker setup on mx linux">
+<meta itemprop="description" content="Steps to setup docker on MX Linux.
+ Follow instructions provided in this link for debian distro. Run sudo groupadd docker Then sudo usermod -aG docker $USER Install apparmor if not already. sudo apt install apparmor Restart services. sudo service apparmor restart and sudo service docker restart Run docker run hello-world =&gt; this should tell you whether you have installed properly or not.  ">
+<meta itemprop="datePublished" content="2023-03-15T18:17:48+05:30" />
+<meta itemprop="dateModified" content="2023-03-15T18:17:48+05:30" />
+<meta itemprop="wordCount" content="62">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta property="og:title" content="Docker setup on mx linux" />
+<meta property="og:description" content="Steps to setup docker on MX Linux.
+ Follow instructions provided in this link for debian distro. Run sudo groupadd docker Then sudo usermod -aG docker $USER Install apparmor if not already. sudo apt install apparmor Restart services. sudo service apparmor restart and sudo service docker restart Run docker run hello-world =&gt; this should tell you whether you have installed properly or not.  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://adityajoshi.github.io/posts/post-6/" /><meta property="og:image" content="https://images.unsplash.com/photo-1560032779-0a8809186efd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2018-03-18T12:13:36+05:30" />
-<meta property="article:modified_time" content="2018-03-18T12:13:36+05:30" />
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://images.unsplash.com/photo-1560032779-0a8809186efd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"/>
-
-<meta name="twitter:title" content="Hugo shortcodes"/>
-<meta name="twitter:description" content="Here is a demo of all shortcodes available in Hugo."/>
+<meta property="og:url" content="https://adityajoshi.github.io/posts/post-6/" />
+<meta property="article:published_time" content="2023-03-15T18:17:48+05:30" />
+<meta property="article:modified_time" content="2023-03-15T18:17:48+05:30" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Docker setup on mx linux"/>
+<meta name="twitter:description" content="Steps to setup docker on MX Linux.
+ Follow instructions provided in this link for debian distro. Run sudo groupadd docker Then sudo usermod -aG docker $USER Install apparmor if not already. sudo apt install apparmor Restart services. sudo service apparmor restart and sudo service docker restart Run docker run hello-world =&gt; this should tell you whether you have installed properly or not.  "/>
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/main.css" />
@@ -35,12 +40,12 @@
 	
 		<div class="avatar">
 			<a href="https://adityajoshi.github.io/">
-				<img src="https://img.freepik.com/free-vector/lightbulb-illustration_24908-57936.jpg" alt="Aditya Joshi&#39;s Blog" />
+				<img src="https://img.freepik.com/free-vector/lightbulb-illustration_24908-57936.jpg" alt="Aditya&#39;s Webpage " />
 			</a>
 		</div>
 	
-	<h1 class="site-title"><a href="https://adityajoshi.github.io/">Aditya Joshi&#39;s Blog</a></h1>
-	<div class="site-description"><p>Personal blog <a href="https://github.com/adityajoshi/adityajoshi.github.io">hosted on github</a></p><nav class="nav social">
+	<h1 class="site-title"><a href="https://adityajoshi.github.io/">Aditya&#39;s Webpage </a></h1>
+	<div class="site-description"><nav class="nav social">
 			<ul class="flat"><li><a href="https://github.com/adityajoshi/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
 		</nav>
 	</div>
@@ -60,10 +65,6 @@
 				<a href="/about">About</a>
 			</li>
 			
-			<li>
-				<a href="/tags">Tags</a>
-			</li>
-			
 		</ul>
 	</nav>
 </div>
@@ -74,55 +75,38 @@
 				
 					<div class="meta">
 						<div class="date">
-							<span class="day">18</span>
-							<span class="rest">Mar 2018</span>
+							<span class="day">15</span>
+							<span class="rest">Mar 2023</span>
 						</div>
 					</div>
 				
 				<div class="matter">
-					<h1 class="title">Hugo shortcodes</h1>
+					<h1 class="title">Docker setup on mx linux</h1>
 				</div>
 			</div>
 					
 			<div class="markdown">
-				<h2 id="images">Images</h2>
-<figure><img src="https://images.unsplash.com/photo-1560032779-0a8809186efd?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"/><figcaption>
-            <h4>Dave Herring</h4>
-        </figcaption>
-</figure>
-
-<figure><img src="https://images.unsplash.com/photo-1560032779-0a8809186efd?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80"/><figcaption>
-            <h4>Dave Herring</h4>
-        </figcaption>
-</figure>
-
-<h2 id="github-gist">Github Gist</h2>
-<script type="application/javascript" src="https://gist.github.com/spf13/7896402.js"></script>
-
-<h2 id="youtube-video">Youtube video</h2>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/w7Ft2ymGmfc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<h2 id="tweet">Tweet</h2>
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hugo 0.24 Released: Big archetype update + <a href="https://twitter.com/Netlify?ref_src=twsrc%5Etfw">@Netlify</a> _redirects etc. file support<a href="https://t.co/X94FmYDEZJ">https://t.co/X94FmYDEZJ</a> <a href="https://twitter.com/hashtag/gohugo?src=hash&amp;ref_src=twsrc%5Etfw">#gohugo</a> <a href="https://twitter.com/hashtag/golang?src=hash&amp;ref_src=twsrc%5Etfw">#golang</a> <a href="https://twitter.com/spf13?ref_src=twsrc%5Etfw">@spf13</a> <a href="https://twitter.com/bepsays?ref_src=twsrc%5Etfw">@bepsays</a></p>&mdash; GoHugo.io (@GoHugoIO) <a href="https://twitter.com/GoHugoIO/status/877500564405444608?ref_src=twsrc%5Etfw">June 21, 2017</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<h2 id="vimeo">Vimeo</h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://player.vimeo.com/video/146022717" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
+				<p>Steps to setup docker on MX Linux.</p>
+<ol>
+<li>Follow instructions provided in this <a href="https://docs.docker.com/desktop/install/linux-install/">link</a> for debian distro.</li>
+<li>Run <code>sudo groupadd docker</code></li>
+<li>Then <code>sudo usermod -aG docker $USER</code></li>
+<li>Install apparmor if not already. <code>sudo apt install apparmor</code></li>
+<li>Restart services. <code>sudo service apparmor restart</code> and <code>sudo service docker restart</code></li>
+<li>Run <code>docker run hello-world</code> =&gt; this should tell you whether you have installed properly or not.</li>
+</ol>
 
 			</div>
 
 			<div class="tags">
 				
+					
+				
 			</div></div>
 	</div>
 	<div class="footer wrapper">
 	<nav class="nav">
-		<div>2022  © Copyright notice |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+		<div>2023  © Copyright notice |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
 	</nav>
 </div>
 

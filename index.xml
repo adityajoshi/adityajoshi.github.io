@@ -7,7 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 15 Mar 2023 18:17:48 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Mar 2023 20:30:14 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Useful docker commands</title>
+      <link>https://adityajoshi.github.io/posts/post-7/</link>
+      <pubDate>Sat, 18 Mar 2023 20:30:14 +0530</pubDate>
+      
+      <guid>https://adityajoshi.github.io/posts/post-7/</guid>
+      <description> Fetch and run docker image  docker run -it python:3.9  Build docker image using Dockerfile in current directory.  docker build -t test:pandas .  This will make image based on your docker file and tag it with name test:pandas So that you can run same as  docker run -it test:pandas </description>
+    </item>
+    
+    <item>
+      <title>Intro to Dockerfile</title>
+      <link>https://adityajoshi.github.io/posts/post-8/</link>
+      <pubDate>Thu, 16 Mar 2023 20:39:18 +0530</pubDate>
+      
+      <guid>https://adityajoshi.github.io/posts/post-8/</guid>
+      <description>A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
+In otherwords, it will have commands that you want to run to build your docker image.
+Example file -
+# This image is based on python:3.9 docker imagefrompython:3.9# install pandas in the base image.RUN pip install pandas# Make the entrypoint for this image as bash.# Same as docker run -it -entrypoint=bash python:3.</description>
+    </item>
+    
     <item>
       <title>Docker setup on mx linux</title>
       <link>https://adityajoshi.github.io/posts/post-6/</link>

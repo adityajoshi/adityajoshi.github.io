@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 18 Mar 2023 20:30:14 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jul 2023 06:38:44 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mastering yt-dlp: A Comprehensive Guide to Downloading YouTube Videos</title>
+      <link>https://adityajoshi.github.io/posts/post-9/</link>
+      <pubDate>Wed, 12 Jul 2023 06:38:44 +0530</pubDate>
+      
+      <guid>https://adityajoshi.github.io/posts/post-9/</guid>
+      <description>In the age of online media consumption, YouTube has become an indispensable platform for video content. However, there are times when you want to save a video for offline viewing or archival purposes. That&amp;rsquo;s where yt-dlp comes into play. yt-dlp is an enhanced version of the popular YouTube video downloader, youtube-dl, with added features and improvements. In this blog post, we will explore how to use yt-dlp to download YouTube videos in various formats.</description>
+    </item>
+    
     <item>
       <title>Useful docker commands</title>
       <link>https://adityajoshi.github.io/posts/post-7/</link>

@@ -7,9 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 12 Jul 2023 06:38:44 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Nov 2023 08:36:08 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mastering yt-dlp: A Comprehensive Guide to Downloading YouTube Videos</title>
+      <title>Useful commands and scripts</title>
+      <link>https://adityajoshi.github.io/posts/post-10/</link>
+      <pubDate>Wed, 15 Nov 2023 08:36:08 +0530</pubDate>
+      
+      <guid>https://adityajoshi.github.io/posts/post-10/</guid>
+      <description>TAR Command to archive just the given folder ( no absolute paths )
+tar -cvf file_name.tar -C ~/ folder_to_be_archived -C option will make tar command to change it&amp;rsquo;s directory from whereever it is to ~/ (home path)</description>
+    </item>
+    
+    <item>
+      <title>Mastering yt-dlp</title>
       <link>https://adityajoshi.github.io/posts/post-9/</link>
       <pubDate>Wed, 12 Jul 2023 06:38:44 +0530</pubDate>
       
@@ -23,7 +33,7 @@
       <pubDate>Sat, 18 Mar 2023 20:30:14 +0530</pubDate>
       
       <guid>https://adityajoshi.github.io/posts/post-7/</guid>
-      <description> Fetch and run docker image  docker run -it python:3.9  Build docker image using Dockerfile in current directory.  docker build -t test:pandas .  This will make image based on your docker file and tag it with name test:pandas So that you can run same as  docker run -it test:pandas </description>
+      <description> Fetch and run docker image docker run -it python:3.9 Build docker image using Dockerfile in current directory. docker build -t test:pandas . This will make image based on your docker file and tag it with name test:pandas So that you can run same as docker run -it test:pandas </description>
     </item>
     
     <item>
@@ -35,7 +45,7 @@
       <description>A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
 In otherwords, it will have commands that you want to run to build your docker image.
 Example file -
-# This image is based on python:3.9 docker imagefrompython:3.9# install pandas in the base image.RUN pip install pandas# Make the entrypoint for this image as bash.# Same as docker run -it -entrypoint=bash python:3.</description>
+# This image is based on python:3.9 docker image from python:3.9 # install pandas in the base image. RUN pip install pandas # Make the entrypoint for this image as bash.</description>
     </item>
     
     <item>
@@ -45,7 +55,7 @@ Example file -
       
       <guid>https://adityajoshi.github.io/posts/post-6/</guid>
       <description>Steps to setup docker on MX Linux.
- Follow instructions provided in this link for debian distro. Run sudo groupadd docker Then sudo usermod -aG docker $USER Install apparmor if not already. sudo apt install apparmor Restart services. sudo service apparmor restart and sudo service docker restart Run docker run hello-world =&amp;gt; this should tell you whether you have installed properly or not.  </description>
+Follow instructions provided in this link for debian distro. Run sudo groupadd docker Then sudo usermod -aG docker $USER Install apparmor if not already. sudo apt install apparmor Restart services. sudo service apparmor restart and sudo service docker restart Run docker run hello-world =&amp;gt; this should tell you whether you have installed properly or not. </description>
     </item>
     
     <item>

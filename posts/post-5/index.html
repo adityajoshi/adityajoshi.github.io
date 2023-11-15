@@ -7,21 +7,16 @@
 <meta itemprop="description" content="If you are using linux machine chances are that you are already using xdg-open.
 xdg-open is a utility used by system to open a file or URL in the user&rsquo;s preferred application.
 To run a specific program for a given type of file or URL all you have to do is create a .dekstop file and configure so that xdg-open can run mentioned program for you.
-To do that create first a desktop file.">
-<meta itemprop="datePublished" content="2022-10-25T08:45:13+05:30" />
+To do that create first a desktop file."><meta itemprop="datePublished" content="2022-10-25T08:45:13+05:30" />
 <meta itemprop="dateModified" content="2022-10-25T08:45:13+05:30" />
 <meta itemprop="wordCount" content="170">
-
-
-
-<meta itemprop="keywords" content="" />
-<meta property="og:title" content="Configure xdg-open for a File or URL" />
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Configure xdg-open for a File or URL" />
 <meta property="og:description" content="If you are using linux machine chances are that you are already using xdg-open.
 xdg-open is a utility used by system to open a file or URL in the user&rsquo;s preferred application.
 To run a specific program for a given type of file or URL all you have to do is create a .dekstop file and configure so that xdg-open can run mentioned program for you.
 To do that create first a desktop file." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://adityajoshi.github.io/posts/post-5/" />
+<meta property="og:url" content="https://adityajoshi.github.io/posts/post-5/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-10-25T08:45:13+05:30" />
 <meta property="article:modified_time" content="2022-10-25T08:45:13+05:30" />
 <meta name="twitter:card" content="summary"/>
@@ -97,17 +92,17 @@ To do that create first a desktop file."/>
 <p>To run a specific program for a given type of file or URL all you have to do is create a .dekstop file and configure so that <code>xdg-open</code> can run mentioned program for you.</p>
 <p>To do that create first a desktop file.</p>
 <p>Here is a example of bombadillo.desktop file to execute <a href="https://bombadillo.colorfield.space/">bombadillo</a> program for any URL starting with gopher/gemini/finger protocol.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">[Desktop Entry]
-Type=Application
-Name=Bombadillo
-GenericName=Non-Web Browser
-Comment=View gopher, gemini, finger, telnet, http(s) sites over the internet
-Terminal=true
-Categories=Network;WebBrowser;ConsoleOnly;
-Exec=bombadillo -t %u
-Icon=bombadillo-icon
-MimeType=x-scheme-handler/gopher;x-scheme-handler/gemini;x-scheme-handler/finger;
-</code></pre></div><p>Note - Terminal=true is needed so that <code>xdg-open</code> can spawn a terminal and execute program in it.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[Desktop Entry]
+</span></span><span style="display:flex;"><span>Type=Application
+</span></span><span style="display:flex;"><span>Name=Bombadillo
+</span></span><span style="display:flex;"><span>GenericName=Non-Web Browser
+</span></span><span style="display:flex;"><span>Comment=View gopher, gemini, finger, telnet, http(s) sites over the internet
+</span></span><span style="display:flex;"><span>Terminal=true
+</span></span><span style="display:flex;"><span>Categories=Network;WebBrowser;ConsoleOnly;
+</span></span><span style="display:flex;"><span>Exec=bombadillo -t %u
+</span></span><span style="display:flex;"><span>Icon=bombadillo-icon
+</span></span><span style="display:flex;"><span>MimeType=x-scheme-handler/gopher;x-scheme-handler/gemini;x-scheme-handler/finger;
+</span></span></code></pre></div><p>Note - Terminal=true is needed so that <code>xdg-open</code> can spawn a terminal and execute program in it.</p>
 <p>Copy file in .local/share/applications in your home directory.</p>
 <p>Run below command to configure this desktop file to gemini URL.</p>
 <p><code>xdg-mime default bombadillo.desktop x-scheme-handler/gemini</code></p>

@@ -7,21 +7,16 @@
 <meta itemprop="description" content="A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
 In otherwords, it will have commands that you want to run to build your docker image.
 Example file -
-# This image is based on python:3.9 docker imagefrompython:3.9# install pandas in the base image.RUN pip install pandas# Make the entrypoint for this image as bash.# Same as docker run -it -entrypoint=bash python:3.">
-<meta itemprop="datePublished" content="2023-03-16T20:39:18+05:30" />
+# This image is based on python:3.9 docker image from python:3.9 # install pandas in the base image. RUN pip install pandas # Make the entrypoint for this image as bash."><meta itemprop="datePublished" content="2023-03-16T20:39:18+05:30" />
 <meta itemprop="dateModified" content="2023-03-16T20:39:18+05:30" />
-<meta itemprop="wordCount" content="92">
-
-
-
-<meta itemprop="keywords" content="" />
-<meta property="og:title" content="Intro to Dockerfile" />
+<meta itemprop="wordCount" content="100">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Intro to Dockerfile" />
 <meta property="og:description" content="A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
 In otherwords, it will have commands that you want to run to build your docker image.
 Example file -
-# This image is based on python:3.9 docker imagefrompython:3.9# install pandas in the base image.RUN pip install pandas# Make the entrypoint for this image as bash.# Same as docker run -it -entrypoint=bash python:3." />
+# This image is based on python:3.9 docker image from python:3.9 # install pandas in the base image. RUN pip install pandas # Make the entrypoint for this image as bash." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://adityajoshi.github.io/posts/post-8/" />
+<meta property="og:url" content="https://adityajoshi.github.io/posts/post-8/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-03-16T20:39:18+05:30" />
 <meta property="article:modified_time" content="2023-03-16T20:39:18+05:30" />
 <meta name="twitter:card" content="summary"/>
@@ -29,7 +24,7 @@ Example file -
 <meta name="twitter:description" content="A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
 In otherwords, it will have commands that you want to run to build your docker image.
 Example file -
-# This image is based on python:3.9 docker imagefrompython:3.9# install pandas in the base image.RUN pip install pandas# Make the entrypoint for this image as bash.# Same as docker run -it -entrypoint=bash python:3."/>
+# This image is based on python:3.9 docker image from python:3.9 # install pandas in the base image. RUN pip install pandas # Make the entrypoint for this image as bash."/>
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/main.css" />
@@ -95,17 +90,17 @@ Example file -
 				<p>A <strong>Dockerfile</strong> is a text document that contains all the commands a user could call on the command line to assemble an image.</p>
 <p>In otherwords, it will have commands that you want to run to build your docker image.</p>
 <p>Example file -</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-docker" data-lang="docker"><span style="color:#008000"># This image is based on python:3.9 docker image</span><span style="">
-</span><span style=""></span><span style="color:#00f">from</span><span style="color:#a31515"> python:3.9</span><span style="">
-</span><span style="">
-</span><span style=""></span><span style="color:#008000"># install pandas in the base image.</span><span style="">
-</span><span style=""></span><span style="color:#00f">RUN</span> pip install pandas<span style="">
-</span><span style="">
-</span><span style=""></span><span style="color:#008000"># Make the entrypoint for this image as bash.</span><span style="">
-</span><span style=""></span><span style="color:#008000"># Same as docker run -it -entrypoint=bash python:3.9</span><span style="">
-</span><span style=""></span><span style="color:#008000"># This will run docker image and instead of python prompt you will get bash.</span><span style="">
-</span><span style=""></span><span style="color:#00f">ENTRYPOINT</span> [ <span style="color:#a31515">&#34;bash&#34;</span> ]<span style="">
-</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-docker" data-lang="docker"><span style="display:flex;"><span><span style="color:#008000"># This image is based on python:3.9 docker image</span><span style="">
+</span></span></span><span style="display:flex;"><span><span style=""></span><span style="color:#00f">from</span><span style="color:#a31515"> python:3.9</span><span style="">
+</span></span></span><span style="display:flex;"><span><span style="">
+</span></span></span><span style="display:flex;"><span><span style=""></span><span style="color:#008000"># install pandas in the base image.</span><span style="">
+</span></span></span><span style="display:flex;"><span><span style=""></span><span style="color:#00f">RUN</span> pip install pandas<span style="">
+</span></span></span><span style="display:flex;"><span><span style="">
+</span></span></span><span style="display:flex;"><span><span style=""></span><span style="color:#008000"># Make the entrypoint for this image as bash.</span><span style="">
+</span></span></span><span style="display:flex;"><span><span style=""></span><span style="color:#008000"># Same as docker run -it -entrypoint=bash python:3.9</span><span style="">
+</span></span></span><span style="display:flex;"><span><span style=""></span><span style="color:#008000"># This will run docker image and instead of python prompt you will get bash.</span><span style="">
+</span></span></span><span style="display:flex;"><span><span style=""></span><span style="color:#00f">ENTRYPOINT</span> [ <span style="color:#a31515">&#34;bash&#34;</span> ]<span style="">
+</span></span></span></code></pre></div>
 			</div>
 
 			<div class="tags">

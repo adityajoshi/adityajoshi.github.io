@@ -6,20 +6,15 @@
 	<meta itemprop="name" content="Reduce Thinkpad&#39;s trackpoint sluggishness on Linux">
 <meta itemprop="description" content="If you have installed Linux on a Thinkpad with X11 and feel trackpoint is sluggish to work with then give below config a try. Ideally this should work on any debian based linux distro.
 Open a terminal and copy below snippet.
-id=`xinput | grep -ie &#34;TrackPoint&#34; | awk &#39;{ print $6 }&#39; | awk &#39;BEGIN{FS=&#34;=&#34;} {print $2}&#39;` xinput set-prop $id &#34;Coordinate Transformation Matrix&#34; 6 0 0 0 6 0 0 0 1 What we are doing here is chaning X and Y sensitivities (set to 6) where both are 1 by default.">
-<meta itemprop="datePublished" content="2022-09-17T22:58:11+05:30" />
+id=`xinput | grep -ie &#34;TrackPoint&#34; | awk &#39;{ print $6 }&#39; | awk &#39;BEGIN{FS=&#34;=&#34;} {print $2}&#39;` xinput set-prop $id &#34;Coordinate Transformation Matrix&#34; 6 0 0 0 6 0 0 0 1 What we are doing here is chaning X and Y sensitivities (set to 6) where both are 1 by default."><meta itemprop="datePublished" content="2022-09-17T22:58:11+05:30" />
 <meta itemprop="dateModified" content="2022-09-17T22:58:11+05:30" />
 <meta itemprop="wordCount" content="158">
-
-
-
-<meta itemprop="keywords" content="" />
-<meta property="og:title" content="Reduce Thinkpad&#39;s trackpoint sluggishness on Linux" />
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Reduce Thinkpad&#39;s trackpoint sluggishness on Linux" />
 <meta property="og:description" content="If you have installed Linux on a Thinkpad with X11 and feel trackpoint is sluggish to work with then give below config a try. Ideally this should work on any debian based linux distro.
 Open a terminal and copy below snippet.
 id=`xinput | grep -ie &#34;TrackPoint&#34; | awk &#39;{ print $6 }&#39; | awk &#39;BEGIN{FS=&#34;=&#34;} {print $2}&#39;` xinput set-prop $id &#34;Coordinate Transformation Matrix&#34; 6 0 0 0 6 0 0 0 1 What we are doing here is chaning X and Y sensitivities (set to 6) where both are 1 by default." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://adityajoshi.github.io/posts/post-2/" />
+<meta property="og:url" content="https://adityajoshi.github.io/posts/post-2/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-17T22:58:11+05:30" />
 <meta property="article:modified_time" content="2022-09-17T22:58:11+05:30" />
 <meta name="twitter:card" content="summary"/>
@@ -92,18 +87,18 @@ id=`xinput | grep -ie &#34;TrackPoint&#34; | awk &#39;{ print $6 }&#39; | awk &#
 				<p>If you have installed Linux on a Thinkpad with X11 and feel trackpoint is sluggish to work with then give below config a try.
 Ideally this should work on any debian based linux distro.</p>
 <p>Open a terminal and copy below snippet.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">id=<span style="color:#a31515">`</span>xinput | grep -ie <span style="color:#a31515">&#34;TrackPoint&#34;</span> | awk <span style="color:#a31515">&#39;{ print $6 }&#39;</span> | awk <span style="color:#a31515">&#39;BEGIN{FS=&#34;=&#34;} {print $2}&#39;</span><span style="color:#a31515">`</span>
-xinput set-prop $id <span style="color:#a31515">&#34;Coordinate Transformation Matrix&#34;</span> 6 0 0 0 6 0 0 0 1
-</code></pre></div><p>What we are doing here is chaning X and Y sensitivities (set to 6) where both are 1 by default.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>id=<span style="color:#a31515">`</span>xinput | grep -ie <span style="color:#a31515">&#34;TrackPoint&#34;</span> | awk <span style="color:#a31515">&#39;{ print $6 }&#39;</span> | awk <span style="color:#a31515">&#39;BEGIN{FS=&#34;=&#34;} {print $2}&#39;</span><span style="color:#a31515">`</span>
+</span></span><span style="display:flex;"><span>xinput set-prop $id <span style="color:#a31515">&#34;Coordinate Transformation Matrix&#34;</span> 6 0 0 0 6 0 0 0 1
+</span></span></code></pre></div><p>What we are doing here is chaning X and Y sensitivities (set to 6) where both are 1 by default.</p>
 <p>You can use xinput list-props [id] command to check value.</p>
 <p>You may want to run this snippet every time X starts.
 For this create .desktop file like below.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">[Desktop Entry]
-Type=Application
-Name=USER autostart
-Comment=my commands after X startup
-Exec=&lt;your command&gt;
-</code></pre></div><p>and save it as $HOME/.config/autostart/trackpoint.desktop</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[Desktop Entry]
+</span></span><span style="display:flex;"><span>Type=Application
+</span></span><span style="display:flex;"><span>Name=USER autostart
+</span></span><span style="display:flex;"><span>Comment=my commands after X startup
+</span></span><span style="display:flex;"><span>Exec=&lt;your command&gt;
+</span></span></code></pre></div><p>and save it as $HOME/.config/autostart/trackpoint.desktop</p>
 <p>PS - You might want to create a shell script for whatever command you finally make for yourself.</p>
 <p>Hope this helps!</p>
 

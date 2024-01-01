@@ -319,7 +319,7 @@ ul {
 }
 
 .recent-posts .posts .post {
-    margin-bottom: 45px;
+    margin-bottom: 5px;
 }
 
 .post-header {
@@ -327,8 +327,7 @@ ul {
 }
 .post-header .meta .date {
     margin-right: 30px;
-    width: 64px;
-    text-align: center;
+    width: 70px;
 }
 .post-header .meta .date .day {
     font-family: "Playfair Display", serif;
@@ -340,7 +339,7 @@ ul {
 }
 .post-header .meta .date .rest {
     display: block;
-    font-size: 0.75em;
+    text-align: left;
 }
 .post-header h1.title {
     margin: -10px 0 0 0;
@@ -350,7 +349,7 @@ ul {
     margin: 0 0 10px 0;
 }
 .post .post-header {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 .post .draft-label {

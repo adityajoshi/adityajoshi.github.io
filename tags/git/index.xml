@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Aditya&#39;s Webpage </title>
+    <link>https://adityajoshi.github.io/tags/git/</link>
+    <description>Recent content in git on Aditya&#39;s Webpage </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Mon, 19 Sep 2022 23:14:34 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solve Git submodule Update Error</title>
+      <link>https://adityajoshi.github.io/posts/post-4/</link>
+      <pubDate>Mon, 19 Sep 2022 23:14:34 +0530</pubDate>
+      
+      <guid>https://adityajoshi.github.io/posts/post-4/</guid>
+      <description>At times you will maintain or use a git repo which contains another repo as a submodule. Sometimes when you update or add this submodule again you may end up error like this.
+&amp;#39;main_repo/sub_repo&amp;#39; already exists in the index. To fix this run below command and try adding submodule again.
+git rm -r --cached main_repo/sub_repo git submodule add --force -b main {repo_url} {folder_to_use_for_sub_repo} </description>
+    </item>
+    
+    <item>
+      <title>Change Git Remote URL via terminal</title>
+      <link>https://adityajoshi.github.io/posts/post-3/</link>
+      <pubDate>Sun, 18 Sep 2022 12:42:54 +0530</pubDate>
+      
+      <guid>https://adityajoshi.github.io/posts/post-3/</guid>
+      <description>I used to clone github repositories with https link. We could use our github credentials with Git command line.
+However as of August 21, Github has removed support for using your account password from Git command line.
+That means you either need to generate Personal Access Tokens or configure repo with ssh keys.
+I prefer 2nd option and that would mean that I need to change remote url in my checkout repo.</description>
+    </item>
+    
+  </channel>
+</rss>

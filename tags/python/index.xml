@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Aditya&#39;s Webpage </title>
+    <link>https://adityajoshi.github.io/tags/python/</link>
+    <description>Recent content in python on Aditya&#39;s Webpage </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Wed, 12 Jul 2023 06:38:44 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mastering yt-dlp</title>
+      <link>https://adityajoshi.github.io/posts/post-9/</link>
+      <pubDate>Wed, 12 Jul 2023 06:38:44 +0530</pubDate>
+      
+      <guid>https://adityajoshi.github.io/posts/post-9/</guid>
+      <description>In the age of online media consumption, YouTube has become an indispensable platform for video content. However, there are times when you want to save a video for offline viewing or archival purposes. That&amp;rsquo;s where yt-dlp comes into play. yt-dlp is an enhanced version of the popular YouTube video downloader, youtube-dl, with added features and improvements. In this blog post, we will explore how to use yt-dlp to download YouTube videos in various formats.</description>
+    </item>
+    
+  </channel>
+</rss>

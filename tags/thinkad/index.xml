@@ -10,10 +10,10 @@
     <lastBuildDate>Sat, 17 Sep 2022 22:58:11 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/tags/thinkad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reduce Thinkpad&#39;s trackpoint sluggishness on Linux</title>
-      <link>https://adityajoshi.github.io/posts/post-2/</link>
+      <link>https://adityajoshi.github.io/posts/thinkpad_trackpoint_linux/</link>
       <pubDate>Sat, 17 Sep 2022 22:58:11 +0530</pubDate>
       
-      <guid>https://adityajoshi.github.io/posts/post-2/</guid>
+      <guid>https://adityajoshi.github.io/posts/thinkpad_trackpoint_linux/</guid>
       <description>If you have installed Linux on a Thinkpad with X11 and feel trackpoint is sluggish to work with then give below config a try. Ideally this should work on any debian based linux distro.
 Open a terminal and copy below snippet.
 id=`xinput | grep -ie &amp;#34;TrackPoint&amp;#34; | awk &amp;#39;{ print $6 }&amp;#39; | awk &amp;#39;BEGIN{FS=&amp;#34;=&amp;#34;} {print $2}&amp;#39;` xinput set-prop $id &amp;#34;Coordinate Transformation Matrix&amp;#34; 6 0 0 0 6 0 0 0 1 What we are doing here is chaning X and Y sensitivities (set to 6) where both are 1 by default.</description>

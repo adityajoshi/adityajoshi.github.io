@@ -3,15 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://adityajoshi.github.io/</loc>
-    <lastmod>2024-01-23T09:21:08+05:30</lastmod>
+    <lastmod>2024-01-31T08:26:21+05:30</lastmod>
+  </url><url>
+    <loc>https://adityajoshi.github.io/posts/git_commands_to_manage_work/</loc>
+    <lastmod>2024-01-31T08:26:21+05:30</lastmod>
+  </url><url>
+    <loc>https://adityajoshi.github.io/posts/</loc>
+    <lastmod>2024-01-31T08:26:21+05:30</lastmod>
   </url><url>
     <loc>https://adityajoshi.github.io/tags/oracle-database/</loc>
     <lastmod>2024-01-23T09:21:08+05:30</lastmod>
   </url><url>
-    <loc>https://adityajoshi.github.io/posts/post-12/</loc>
-    <lastmod>2024-01-23T09:21:08+05:30</lastmod>
-  </url><url>
-    <loc>https://adityajoshi.github.io/posts/</loc>
+    <loc>https://adityajoshi.github.io/posts/oracle_regexp_replace/</loc>
     <lastmod>2024-01-23T09:21:08+05:30</lastmod>
   </url><url>
     <loc>https://adityajoshi.github.io/tags/</loc>
@@ -20,7 +23,7 @@
     <loc>https://adityajoshi.github.io/tags/env/</loc>
     <lastmod>2023-12-22T00:35:57+05:30</lastmod>
   </url><url>
-    <loc>https://adityajoshi.github.io/posts/post-11/</loc>
+    <loc>https://adityajoshi.github.io/posts/brackets_in_makefile/</loc>
     <lastmod>2023-12-22T00:35:57+05:30</lastmod>
   </url><url>
     <loc>https://adityajoshi.github.io/tags/make/</loc>
@@ -32,10 +35,10 @@
     <loc>https://adityajoshi.github.io/tags/unix/</loc>
     <lastmod>2023-11-15T08:36:08+05:30</lastmod>
   </url><url>
-    <loc>https://adityajoshi.github.io/posts/post-10/</loc>
+    <loc>https://adityajoshi.github.io/posts/useful_commands_scripts/</loc>
     <lastmod>2023-11-15T08:36:08+05:30</lastmod>
   </url><url>
-    <loc>https://adityajoshi.github.io/posts/post-9/</loc>
+    <loc>https://adityajoshi.github.io/posts/learn_yt_dlp/</loc>
     <lastmod>2023-07-12T06:38:44+05:30</lastmod>
   </url><url>
     <loc>https://adityajoshi.github.io/tags/python/</loc>
@@ -50,37 +53,37 @@
     <loc>https://adityajoshi.github.io/tags/podman/</loc>
     <lastmod>2023-03-18T20:30:14+05:30</lastmod>
   </url><url>
-    <loc>https://adityajoshi.github.io/posts/post-7/</loc>
+    <loc>https://adityajoshi.github.io/posts/docker_commands/</loc>
     <lastmod>2023-03-18T20:30:14+05:30</lastmod>
   </url><url>
-    <loc>https://adityajoshi.github.io/posts/post-8/</loc>
+    <loc>https://adityajoshi.github.io/posts/docker_intro/</loc>
     <lastmod>2023-03-16T20:39:18+05:30</lastmod>
   </url><url>
-    <loc>https://adityajoshi.github.io/posts/post-6/</loc>
+    <loc>https://adityajoshi.github.io/posts/docker_in_mxlinux/</loc>
     <lastmod>2023-03-15T18:17:48+05:30</lastmod>
   </url><url>
     <loc>https://adityajoshi.github.io/tags/linux/</loc>
     <lastmod>2023-03-15T18:17:48+05:30</lastmod>
   </url><url>
-    <loc>https://adityajoshi.github.io/posts/post-5/</loc>
+    <loc>https://adityajoshi.github.io/posts/configure_xdg_open/</loc>
     <lastmod>2022-10-25T08:45:13+05:30</lastmod>
   </url><url>
     <loc>https://adityajoshi.github.io/tags/git/</loc>
     <lastmod>2022-09-19T23:14:34+05:30</lastmod>
   </url><url>
-    <loc>https://adityajoshi.github.io/posts/post-4/</loc>
+    <loc>https://adityajoshi.github.io/posts/git_submodule_error/</loc>
     <lastmod>2022-09-19T23:14:34+05:30</lastmod>
   </url><url>
-    <loc>https://adityajoshi.github.io/posts/post-3/</loc>
+    <loc>https://adityajoshi.github.io/posts/git_change_remote_url/</loc>
     <lastmod>2022-09-18T12:42:54+05:30</lastmod>
   </url><url>
-    <loc>https://adityajoshi.github.io/posts/post-2/</loc>
+    <loc>https://adityajoshi.github.io/posts/thinkpad_trackpoint_linux/</loc>
     <lastmod>2022-09-17T22:58:11+05:30</lastmod>
   </url><url>
     <loc>https://adityajoshi.github.io/tags/thinkad/</loc>
     <lastmod>2022-09-17T22:58:11+05:30</lastmod>
   </url><url>
-    <loc>https://adityajoshi.github.io/posts/post-1/</loc>
+    <loc>https://adityajoshi.github.io/posts/oracle_instance_in_oci/</loc>
     <lastmod>2022-05-02T09:07:23+05:30</lastmod>
   </url><url>
     <loc>https://adityajoshi.github.io/tags/oci/</loc>

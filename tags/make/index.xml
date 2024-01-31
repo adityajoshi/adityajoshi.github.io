@@ -10,10 +10,10 @@
     <lastBuildDate>Fri, 22 Dec 2023 00:35:57 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/tags/make/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Importance of brackets around variables in Makefile</title>
-      <link>https://adityajoshi.github.io/posts/post-11/</link>
+      <link>https://adityajoshi.github.io/posts/brackets_in_makefile/</link>
       <pubDate>Fri, 22 Dec 2023 00:35:57 +0530</pubDate>
       
-      <guid>https://adityajoshi.github.io/posts/post-11/</guid>
+      <guid>https://adityajoshi.github.io/posts/brackets_in_makefile/</guid>
       <description>Brackets make it possible for make command to identify defined variable. Without brackets ( round or curly ) make command will only consider the very next character after &amp;ldquo;$&amp;rdquo; sign as variable, leaving remainting characters of the actual word.
 Consider below Makefile. Remember it&amp;rsquo;s Makefile so indentation is TAB.
 all: @echo &amp;#34;Building all targets...&amp;#34; target1: VAR = Value_for_target1 target1: @echo &amp;#34;Building target1 with VAR set to $(VAR)&amp;#34; target2: VAR = Value_for_target2 target2: @echo &amp;#34;Building target2 with VAR set to $(VAR)&amp;#34; and if you run&amp;hellip;</description>

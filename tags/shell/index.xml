@@ -1,36 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>shell on Aditya&#39;s Dev Corner 🚀</title>
+    <title>shell on Aditya&#39;s Corner 🚀</title>
     <link>https://adityajoshi.github.io/tags/shell/</link>
-    <description>Recent content in shell on Aditya&#39;s Dev Corner 🚀</description>
+    <description>Recent content in shell on Aditya&#39;s Corner 🚀</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 15 Nov 2023 08:36:08 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Nov 2023 08:36:08 +0530</lastBuildDate>
+    <atom:link href="https://adityajoshi.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Useful commands and scripts</title>
       <link>https://adityajoshi.github.io/posts/useful_commands_scripts/</link>
       <pubDate>Wed, 15 Nov 2023 08:36:08 +0530</pubDate>
-      
       <guid>https://adityajoshi.github.io/posts/useful_commands_scripts/</guid>
-      <description>TAR Command to archive just the given folder ( no absolute paths )
-tar -cvf file_name.tar -C ~/ folder_to_be_archived -C option will make tar command to change it&amp;rsquo;s directory from whereever it is to ~/ (home path)
-To install ncurses lib on fedora
-sudo dnf install ncurses-devel-6.4-7.20230520.fc39.x86_64 Note - Hit tab after nucrses-devel. It will pick up available version.</description>
+      <description>TAR Command to archive just the given folder ( no absolute paths )&#xA;tar -cvf file_name.tar -C ~/ folder_to_be_archived -C option will make tar command to change it&amp;rsquo;s directory from whereever it is to ~/ (home path)&#xA;To install ncurses lib on fedora&#xA;sudo dnf install ncurses-devel-6.4-7.20230520.fc39.x86_64 Note - Hit tab after nucrses-devel. It will pick up available version.</description>
     </item>
-    
     <item>
       <title>Configure xdg-open for a File or URL</title>
       <link>https://adityajoshi.github.io/posts/configure_xdg_open/</link>
       <pubDate>Tue, 25 Oct 2022 08:45:13 +0530</pubDate>
-      
       <guid>https://adityajoshi.github.io/posts/configure_xdg_open/</guid>
-      <description>If you are using linux machine chances are that you are already using xdg-open.
-xdg-open is a utility used by system to open a file or URL in the user&amp;rsquo;s preferred application.
-To run a specific program for a given type of file or URL all you have to do is create a .dekstop file and configure so that xdg-open can run mentioned program for you.
-To do that create first a desktop file.</description>
+      <description>If you are using linux machine chances are that you are already using xdg-open.&#xA;xdg-open is a utility used by system to open a file or URL in the user&amp;rsquo;s preferred application.&#xA;To run a specific program for a given type of file or URL all you have to do is create a .dekstop file and configure so that xdg-open can run mentioned program for you.&#xA;To do that create first a desktop file.</description>
     </item>
-    
   </channel>
 </rss>

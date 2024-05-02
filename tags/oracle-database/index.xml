@@ -1,34 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Oracle Database on Aditya&#39;s Dev Corner 🚀</title>
+    <title>Oracle Database on Aditya&#39;s Corner 🚀</title>
     <link>https://adityajoshi.github.io/tags/oracle-database/</link>
-    <description>Recent content in Oracle Database on Aditya&#39;s Dev Corner 🚀</description>
+    <description>Recent content in Oracle Database on Aditya&#39;s Corner 🚀</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Tue, 23 Jan 2024 09:21:08 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/tags/oracle-database/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Jan 2024 09:21:08 +0530</lastBuildDate>
+    <atom:link href="https://adityajoshi.github.io/tags/oracle-database/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oracle REGEXP_REPLACE</title>
       <link>https://adityajoshi.github.io/posts/oracle_regexp_replace/</link>
       <pubDate>Tue, 23 Jan 2024 09:21:08 +0530</pubDate>
-      
       <guid>https://adityajoshi.github.io/posts/oracle_regexp_replace/</guid>
-      <description>This post is to remind myself power of Oracle REGEXP_REPLACE. At time I forget how this in-build function can be used instead of writing a code!
-Few examples: Below will replace remove digits.
-WITH strings AS ( SELECT &amp;#39;abc123&amp;#39; s FROM dual union all SELECT &amp;#39;123abc&amp;#39; s FROM dual union all SELECT &amp;#39;a1b2c3&amp;#39; s FROM dual ) SELECT s &amp;#34;STRING&amp;#34;, regexp_replace(s, &amp;#39;[0-9]&amp;#39;, &amp;#39;&amp;#39;) &amp;#34;MODIFIED_STRING&amp;#34; FROM strings Output:
-STRING MODIFIED_STRING abc123 abc 123abc abc a1b2c3 abc Convert multiple spaces to single space.</description>
+      <description>This post is to remind myself power of Oracle REGEXP_REPLACE. At time I forget how this in-build function can be used instead of writing a code!&#xA;Few examples: Below will replace remove digits.&#xA;WITH strings AS ( SELECT &amp;#39;abc123&amp;#39; s FROM dual union all SELECT &amp;#39;123abc&amp;#39; s FROM dual union all SELECT &amp;#39;a1b2c3&amp;#39; s FROM dual ) SELECT s &amp;#34;STRING&amp;#34;, regexp_replace(s, &amp;#39;[0-9]&amp;#39;, &amp;#39;&amp;#39;) &amp;#34;MODIFIED_STRING&amp;#34; FROM strings Output:&#xA;STRING MODIFIED_STRING abc123 abc 123abc abc a1b2c3 abc Convert multiple spaces to single space.</description>
     </item>
-    
     <item>
       <title>Create Oracle database in Oracle Free Tier Cloud</title>
       <link>https://adityajoshi.github.io/posts/oracle_instance_in_oci/</link>
       <pubDate>Mon, 02 May 2022 09:07:23 +0530</pubDate>
-      
       <guid>https://adityajoshi.github.io/posts/oracle_instance_in_oci/</guid>
-      <description>If you want to work on oracle db but don&amp;rsquo;t want to do setup or worry about performance of it in your machine then I would recommend you to try oracle ATP database in cloud. Setting up new database and connecting with your trusty Oracle SQL Developer IDE is fairly simple. This guide will walk you through same.
-Prerequisite : You will need Oracle Cloud Free Tier Account to get started.</description>
+      <description>If you want to work on oracle db but don&amp;rsquo;t want to do setup or worry about performance of it in your machine then I would recommend you to try oracle ATP database in cloud. Setting up new database and connecting with your trusty Oracle SQL Developer IDE is fairly simple. This guide will walk you through same.&#xA;Prerequisite : You will need Oracle Cloud Free Tier Account to get started.</description>
     </item>
-    
   </channel>
 </rss>

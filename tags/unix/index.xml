@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>unix on Aditya&#39;s Dev Corner 🚀</title>
+    <title>unix on Aditya&#39;s Corner 🚀</title>
     <link>https://adityajoshi.github.io/tags/unix/</link>
-    <description>Recent content in unix on Aditya&#39;s Dev Corner 🚀</description>
+    <description>Recent content in unix on Aditya&#39;s Corner 🚀</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 15 Nov 2023 08:36:08 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/tags/unix/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Nov 2023 08:36:08 +0530</lastBuildDate>
+    <atom:link href="https://adityajoshi.github.io/tags/unix/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Useful commands and scripts</title>
       <link>https://adityajoshi.github.io/posts/useful_commands_scripts/</link>
       <pubDate>Wed, 15 Nov 2023 08:36:08 +0530</pubDate>
-      
       <guid>https://adityajoshi.github.io/posts/useful_commands_scripts/</guid>
-      <description>TAR Command to archive just the given folder ( no absolute paths )
-tar -cvf file_name.tar -C ~/ folder_to_be_archived -C option will make tar command to change it&amp;rsquo;s directory from whereever it is to ~/ (home path)
-To install ncurses lib on fedora
-sudo dnf install ncurses-devel-6.4-7.20230520.fc39.x86_64 Note - Hit tab after nucrses-devel. It will pick up available version.</description>
+      <description>TAR Command to archive just the given folder ( no absolute paths )&#xA;tar -cvf file_name.tar -C ~/ folder_to_be_archived -C option will make tar command to change it&amp;rsquo;s directory from whereever it is to ~/ (home path)&#xA;To install ncurses lib on fedora&#xA;sudo dnf install ncurses-devel-6.4-7.20230520.fc39.x86_64 Note - Hit tab after nucrses-devel. It will pick up available version.</description>
     </item>
-    
   </channel>
 </rss>

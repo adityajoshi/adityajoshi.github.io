@@ -1,45 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux on Aditya&#39;s Dev Corner 🚀</title>
+    <title>linux on Aditya&#39;s Corner 🚀</title>
     <link>https://adityajoshi.github.io/tags/linux/</link>
-    <description>Recent content in linux on Aditya&#39;s Dev Corner 🚀</description>
+    <description>Recent content in linux on Aditya&#39;s Corner 🚀</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 15 Mar 2023 18:17:48 +0530</lastBuildDate><atom:link href="https://adityajoshi.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Mar 2023 18:17:48 +0530</lastBuildDate>
+    <atom:link href="https://adityajoshi.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker setup on mx linux</title>
       <link>https://adityajoshi.github.io/posts/docker_in_mxlinux/</link>
       <pubDate>Wed, 15 Mar 2023 18:17:48 +0530</pubDate>
-      
       <guid>https://adityajoshi.github.io/posts/docker_in_mxlinux/</guid>
-      <description>Steps to setup docker on MX Linux.
-Follow instructions provided in this link for debian distro. Run sudo groupadd docker Then sudo usermod -aG docker $USER Install apparmor if not already. sudo apt install apparmor Restart services. sudo service apparmor restart and sudo service docker restart Run docker run hello-world =&amp;gt; this should tell you whether you have installed properly or not. </description>
+      <description>Steps to setup docker on MX Linux.&#xA;Follow instructions provided in this link for debian distro. Run sudo groupadd docker Then sudo usermod -aG docker $USER Install apparmor if not already. sudo apt install apparmor Restart services. sudo service apparmor restart and sudo service docker restart Run docker run hello-world =&amp;gt; this should tell you whether you have installed properly or not. </description>
     </item>
-    
     <item>
       <title>Configure xdg-open for a File or URL</title>
       <link>https://adityajoshi.github.io/posts/configure_xdg_open/</link>
       <pubDate>Tue, 25 Oct 2022 08:45:13 +0530</pubDate>
-      
       <guid>https://adityajoshi.github.io/posts/configure_xdg_open/</guid>
-      <description>If you are using linux machine chances are that you are already using xdg-open.
-xdg-open is a utility used by system to open a file or URL in the user&amp;rsquo;s preferred application.
-To run a specific program for a given type of file or URL all you have to do is create a .dekstop file and configure so that xdg-open can run mentioned program for you.
-To do that create first a desktop file.</description>
+      <description>If you are using linux machine chances are that you are already using xdg-open.&#xA;xdg-open is a utility used by system to open a file or URL in the user&amp;rsquo;s preferred application.&#xA;To run a specific program for a given type of file or URL all you have to do is create a .dekstop file and configure so that xdg-open can run mentioned program for you.&#xA;To do that create first a desktop file.</description>
     </item>
-    
     <item>
       <title>Reduce Thinkpad&#39;s trackpoint sluggishness on Linux</title>
       <link>https://adityajoshi.github.io/posts/thinkpad_trackpoint_linux/</link>
       <pubDate>Sat, 17 Sep 2022 22:58:11 +0530</pubDate>
-      
       <guid>https://adityajoshi.github.io/posts/thinkpad_trackpoint_linux/</guid>
-      <description>If you have installed Linux on a Thinkpad with X11 and feel trackpoint is sluggish to work with then give below config a try. Ideally this should work on any debian based linux distro.
-Open a terminal and copy below snippet.
-id=`xinput | grep -ie &amp;#34;TrackPoint&amp;#34; | awk &amp;#39;{ print $6 }&amp;#39; | awk &amp;#39;BEGIN{FS=&amp;#34;=&amp;#34;} {print $2}&amp;#39;` xinput set-prop $id &amp;#34;Coordinate Transformation Matrix&amp;#34; 6 0 0 0 6 0 0 0 1 What we are doing here is chaning X and Y sensitivities (set to 6) where both are 1 by default.</description>
+      <description>If you have installed Linux on a Thinkpad with X11 and feel trackpoint is sluggish to work with then give below config a try. Ideally this should work on any debian based linux distro.&#xA;Open a terminal and copy below snippet.&#xA;id=`xinput | grep -ie &amp;#34;TrackPoint&amp;#34; | awk &amp;#39;{ print $6 }&amp;#39; | awk &amp;#39;BEGIN{FS=&amp;#34;=&amp;#34;} {print $2}&amp;#39;` xinput set-prop $id &amp;#34;Coordinate Transformation Matrix&amp;#34; 6 0 0 0 6 0 0 0 1 What we are doing here is chaning X and Y sensitivities (set to 6) where both are 1 by default.</description>
     </item>
-    
   </channel>
 </rss>

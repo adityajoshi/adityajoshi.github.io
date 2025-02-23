@@ -43,16 +43,3 @@ function lightscheme(toggle, container) {
   toggle.className = "light";
   container.className = "";
 }
-
-function calculateInflation() {
-	const amount = document.getElementById('amount').value;
-	const years = document.getElementById('years').value;
-	const inflationRate = document.getElementById('inflationRate').value;
-
-	const futureValue = amount * (1 + inflationRate / 100) ** years;
-	const inflationAmount = futureValue - amount;
-
-	const result = document.getElementById('result');
-	result.textContent = `Inflation amount after ${years} years: ₹${inflationAmount.toFixed(2)}`;
-}
-

@@ -3,25 +3,33 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Reduce Thinkpad&#39;s trackpoint sluggishness on Linux - Aditya&#39;s Corner 🚀</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta itemprop="name" content="Reduce Thinkpad&#39;s trackpoint sluggishness on Linux">
-<meta itemprop="description" content="If you have installed Linux on a Thinkpad with X11 and feel trackpoint is sluggish to work with then give below config a try. Ideally this should work on any debian based linux distro.
+	
+  <meta itemprop="name" content="Reduce Thinkpad&#39;s trackpoint sluggishness on Linux">
+  <meta itemprop="description" content="If you have installed Linux on a Thinkpad with X11 and feel trackpoint is sluggish to work with then give below config a try. Ideally this should work on any debian based linux distro.
 Open a terminal and copy below snippet.
-id=`xinput | grep -ie &#34;TrackPoint&#34; | awk &#39;{ print $6 }&#39; | awk &#39;BEGIN{FS=&#34;=&#34;} {print $2}&#39;` xinput set-prop $id &#34;Coordinate Transformation Matrix&#34; 6 0 0 0 6 0 0 0 1 What we are doing here is chaning X and Y sensitivities (set to 6) where both are 1 by default."><meta itemprop="datePublished" content="2022-09-17T22:58:11+05:30" />
-<meta itemprop="dateModified" content="2022-09-17T22:58:11+05:30" />
-<meta itemprop="wordCount" content="158">
-<meta itemprop="keywords" content="thinkad,Linux," /><meta property="og:title" content="Reduce Thinkpad&#39;s trackpoint sluggishness on Linux" />
-<meta property="og:description" content="If you have installed Linux on a Thinkpad with X11 and feel trackpoint is sluggish to work with then give below config a try. Ideally this should work on any debian based linux distro.
+id=`xinput | grep -ie &#34;TrackPoint&#34; | awk &#39;{ print $6 }&#39; | awk &#39;BEGIN{FS=&#34;=&#34;} {print $2}&#39;` xinput set-prop $id &#34;Coordinate Transformation Matrix&#34; 6 0 0 0 6 0 0 0 1 What we are doing here is chaning X and Y sensitivities (set to 6) where both are 1 by default.">
+  <meta itemprop="datePublished" content="2022-09-17T22:58:11+05:30">
+  <meta itemprop="dateModified" content="2022-09-17T22:58:11+05:30">
+  <meta itemprop="wordCount" content="158">
+  <meta itemprop="keywords" content="Thinkad,Linux"><meta property="og:url" content="https://adityajoshi.github.io/posts/thinkpad_trackpoint_linux/">
+  <meta property="og:site_name" content="Aditya&#39;s Corner 🚀">
+  <meta property="og:title" content="Reduce Thinkpad&#39;s trackpoint sluggishness on Linux">
+  <meta property="og:description" content="If you have installed Linux on a Thinkpad with X11 and feel trackpoint is sluggish to work with then give below config a try. Ideally this should work on any debian based linux distro.
 Open a terminal and copy below snippet.
-id=`xinput | grep -ie &#34;TrackPoint&#34; | awk &#39;{ print $6 }&#39; | awk &#39;BEGIN{FS=&#34;=&#34;} {print $2}&#39;` xinput set-prop $id &#34;Coordinate Transformation Matrix&#34; 6 0 0 0 6 0 0 0 1 What we are doing here is chaning X and Y sensitivities (set to 6) where both are 1 by default." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://adityajoshi.github.io/posts/thinkpad_trackpoint_linux/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-09-17T22:58:11+05:30" />
-<meta property="article:modified_time" content="2022-09-17T22:58:11+05:30" />
+id=`xinput | grep -ie &#34;TrackPoint&#34; | awk &#39;{ print $6 }&#39; | awk &#39;BEGIN{FS=&#34;=&#34;} {print $2}&#39;` xinput set-prop $id &#34;Coordinate Transformation Matrix&#34; 6 0 0 0 6 0 0 0 1 What we are doing here is chaning X and Y sensitivities (set to 6) where both are 1 by default.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-09-17T22:58:11+05:30">
+    <meta property="article:modified_time" content="2022-09-17T22:58:11+05:30">
+    <meta property="article:tag" content="Thinkad">
+    <meta property="article:tag" content="Linux">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Reduce Thinkpad&#39;s trackpoint sluggishness on Linux"/>
-<meta name="twitter:description" content="If you have installed Linux on a Thinkpad with X11 and feel trackpoint is sluggish to work with then give below config a try. Ideally this should work on any debian based linux distro.
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Reduce Thinkpad&#39;s trackpoint sluggishness on Linux">
+  <meta name="twitter:description" content="If you have installed Linux on a Thinkpad with X11 and feel trackpoint is sluggish to work with then give below config a try. Ideally this should work on any debian based linux distro.
 Open a terminal and copy below snippet.
-id=`xinput | grep -ie &#34;TrackPoint&#34; | awk &#39;{ print $6 }&#39; | awk &#39;BEGIN{FS=&#34;=&#34;} {print $2}&#39;` xinput set-prop $id &#34;Coordinate Transformation Matrix&#34; 6 0 0 0 6 0 0 0 1 What we are doing here is chaning X and Y sensitivities (set to 6) where both are 1 by default."/>
+id=`xinput | grep -ie &#34;TrackPoint&#34; | awk &#39;{ print $6 }&#39; | awk &#39;BEGIN{FS=&#34;=&#34;} {print $2}&#39;` xinput set-prop $id &#34;Coordinate Transformation Matrix&#34; 6 0 0 0 6 0 0 0 1 What we are doing here is chaning X and Y sensitivities (set to 6) where both are 1 by default.">
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/main.css" />
@@ -124,21 +132,8 @@ For this create .desktop file like below.</p>
 	</div>
 	<div class="footer wrapper">
 	<nav class="nav">
-		<div>2024  © Copyright notice |  <a href="https://github.com/adityajoshi/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+		<div>2025  © Copyright notice |  <a href="https://github.com/adityajoshi/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
 	</nav>
-</div>
-
-
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-123-45', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<script>feather.replace()</script>
+</div><script>feather.replace()</script>
 </body>
 </html>

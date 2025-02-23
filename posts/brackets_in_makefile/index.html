@@ -3,25 +3,33 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Importance of brackets around variables in Makefile - Aditya&#39;s Corner 🚀</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta itemprop="name" content="Importance of brackets around variables in Makefile">
-<meta itemprop="description" content="Brackets make it possible for make command to identify defined variable. Without brackets ( round or curly ) make command will only consider the very next character after &ldquo;$&rdquo; sign as variable, leaving remainting characters of the actual word.
-Consider below Makefile. Remember it&rsquo;s Makefile so indentation is TAB.
-all: @echo &#34;Building all targets...&#34; target1: VAR = Value_for_target1 target1: @echo &#34;Building target1 with VAR set to $(VAR)&#34; target2: VAR = Value_for_target2 target2: @echo &#34;Building target2 with VAR set to $(VAR)&#34; and if you run&hellip;"><meta itemprop="datePublished" content="2023-12-22T00:35:57+05:30" />
-<meta itemprop="dateModified" content="2023-12-22T00:35:57+05:30" />
-<meta itemprop="wordCount" content="143">
-<meta itemprop="keywords" content="make,env," /><meta property="og:title" content="Importance of brackets around variables in Makefile" />
-<meta property="og:description" content="Brackets make it possible for make command to identify defined variable. Without brackets ( round or curly ) make command will only consider the very next character after &ldquo;$&rdquo; sign as variable, leaving remainting characters of the actual word.
-Consider below Makefile. Remember it&rsquo;s Makefile so indentation is TAB.
-all: @echo &#34;Building all targets...&#34; target1: VAR = Value_for_target1 target1: @echo &#34;Building target1 with VAR set to $(VAR)&#34; target2: VAR = Value_for_target2 target2: @echo &#34;Building target2 with VAR set to $(VAR)&#34; and if you run&hellip;" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://adityajoshi.github.io/posts/brackets_in_makefile/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-12-22T00:35:57+05:30" />
-<meta property="article:modified_time" content="2023-12-22T00:35:57+05:30" />
+	
+  <meta itemprop="name" content="Importance of brackets around variables in Makefile">
+  <meta itemprop="description" content="Brackets make it possible for make command to identify defined variable. Without brackets ( round or curly ) make command will only consider the very next character after “$” sign as variable, leaving remainting characters of the actual word.
+Consider below Makefile. Remember it’s Makefile so indentation is TAB.
+all: @echo &#34;Building all targets...&#34; target1: VAR = Value_for_target1 target1: @echo &#34;Building target1 with VAR set to $(VAR)&#34; target2: VAR = Value_for_target2 target2: @echo &#34;Building target2 with VAR set to $(VAR)&#34; and if you run…">
+  <meta itemprop="datePublished" content="2023-12-22T00:35:57+05:30">
+  <meta itemprop="dateModified" content="2023-12-22T00:35:57+05:30">
+  <meta itemprop="wordCount" content="143">
+  <meta itemprop="keywords" content="Make,Env"><meta property="og:url" content="https://adityajoshi.github.io/posts/brackets_in_makefile/">
+  <meta property="og:site_name" content="Aditya&#39;s Corner 🚀">
+  <meta property="og:title" content="Importance of brackets around variables in Makefile">
+  <meta property="og:description" content="Brackets make it possible for make command to identify defined variable. Without brackets ( round or curly ) make command will only consider the very next character after “$” sign as variable, leaving remainting characters of the actual word.
+Consider below Makefile. Remember it’s Makefile so indentation is TAB.
+all: @echo &#34;Building all targets...&#34; target1: VAR = Value_for_target1 target1: @echo &#34;Building target1 with VAR set to $(VAR)&#34; target2: VAR = Value_for_target2 target2: @echo &#34;Building target2 with VAR set to $(VAR)&#34; and if you run…">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-12-22T00:35:57+05:30">
+    <meta property="article:modified_time" content="2023-12-22T00:35:57+05:30">
+    <meta property="article:tag" content="Make">
+    <meta property="article:tag" content="Env">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Importance of brackets around variables in Makefile"/>
-<meta name="twitter:description" content="Brackets make it possible for make command to identify defined variable. Without brackets ( round or curly ) make command will only consider the very next character after &ldquo;$&rdquo; sign as variable, leaving remainting characters of the actual word.
-Consider below Makefile. Remember it&rsquo;s Makefile so indentation is TAB.
-all: @echo &#34;Building all targets...&#34; target1: VAR = Value_for_target1 target1: @echo &#34;Building target1 with VAR set to $(VAR)&#34; target2: VAR = Value_for_target2 target2: @echo &#34;Building target2 with VAR set to $(VAR)&#34; and if you run&hellip;"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Importance of brackets around variables in Makefile">
+  <meta name="twitter:description" content="Brackets make it possible for make command to identify defined variable. Without brackets ( round or curly ) make command will only consider the very next character after “$” sign as variable, leaving remainting characters of the actual word.
+Consider below Makefile. Remember it’s Makefile so indentation is TAB.
+all: @echo &#34;Building all targets...&#34; target1: VAR = Value_for_target1 target1: @echo &#34;Building target1 with VAR set to $(VAR)&#34; target2: VAR = Value_for_target2 target2: @echo &#34;Building target2 with VAR set to $(VAR)&#34; and if you run…">
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/main.css" />
@@ -128,21 +136,8 @@ Without brackets ( round or curly )  make command will only consider the very ne
 	</div>
 	<div class="footer wrapper">
 	<nav class="nav">
-		<div>2024  © Copyright notice |  <a href="https://github.com/adityajoshi/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+		<div>2025  © Copyright notice |  <a href="https://github.com/adityajoshi/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
 	</nav>
-</div>
-
-
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-123-45', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<script>feather.replace()</script>
+</div><script>feather.replace()</script>
 </body>
 </html>

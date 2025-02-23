@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Openbox Power menu setup - Aditya&#39;s Corner 🚀</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <meta itemprop="name" content="Openbox Power menu setup">
+  <meta itemprop="description" content="Adding Shutdown, Restart, Suspend, and Hibernate Options in Openbox Menu If you’re using Openbox as your window manager and want quick access to power options like Shutdown, Restart, Suspend, and Hibernate, modifying the menu.xml file is a simple and effective approach.
+📌 Steps to Add Power Options Locate your menu.xml file
+Typically found at:
+~/.config/openbox/menu.xml If it’s not there, check in /etc/xdg/openbox/menu.xml.
+Edit the File
+Open it in your favorite text editor:">
+  <meta itemprop="datePublished" content="2025-02-23T16:45:28+05:30">
+  <meta itemprop="dateModified" content="2025-02-23T16:45:28+05:30">
+  <meta itemprop="wordCount" content="237">
+  <meta itemprop="keywords" content="Openbox,Fedora"><meta property="og:url" content="https://adityajoshi.github.io/posts/openbox_power_menu_setup/">
+  <meta property="og:site_name" content="Aditya&#39;s Corner 🚀">
+  <meta property="og:title" content="Openbox Power menu setup">
+  <meta property="og:description" content="Adding Shutdown, Restart, Suspend, and Hibernate Options in Openbox Menu If you’re using Openbox as your window manager and want quick access to power options like Shutdown, Restart, Suspend, and Hibernate, modifying the menu.xml file is a simple and effective approach.
+📌 Steps to Add Power Options Locate your menu.xml file
+Typically found at:
+~/.config/openbox/menu.xml If it’s not there, check in /etc/xdg/openbox/menu.xml.
+Edit the File
+Open it in your favorite text editor:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-23T16:45:28+05:30">
+    <meta property="article:modified_time" content="2025-02-23T16:45:28+05:30">
+    <meta property="article:tag" content="Openbox">
+    <meta property="article:tag" content="Fedora">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Openbox Power menu setup">
+  <meta name="twitter:description" content="Adding Shutdown, Restart, Suspend, and Hibernate Options in Openbox Menu If you’re using Openbox as your window manager and want quick access to power options like Shutdown, Restart, Suspend, and Hibernate, modifying the menu.xml file is a simple and effective approach.
+📌 Steps to Add Power Options Locate your menu.xml file
+Typically found at:
+~/.config/openbox/menu.xml If it’s not there, check in /etc/xdg/openbox/menu.xml.
+Edit the File
+Open it in your favorite text editor:">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://adityajoshi.github.io/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://adityajoshi.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://adityajoshi.github.io/">
+				<img src="https://img.freepik.com/free-vector/lightbulb-illustration_24908-57936.jpg" alt="Aditya&#39;s Corner 🚀" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://adityajoshi.github.io/">Aditya&#39;s Corner 🚀</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/adityajoshi/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">Posts</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">23</span>
+							<span class="rest">Feb 2025</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Openbox Power menu setup</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<hr>
+<h2 id="adding-shutdown-restart-suspend-and-hibernate-options-in-openbox-menu">Adding Shutdown, Restart, Suspend, and Hibernate Options in Openbox Menu</h2>
+<p>If you&rsquo;re using Openbox as your window manager and want quick access to power options like <strong>Shutdown, Restart, Suspend, and Hibernate</strong>, modifying the <code>menu.xml</code> file is a simple and effective approach.</p>
+<h3 id="-steps-to-add-power-options">📌 Steps to Add Power Options</h3>
+<ol>
+<li>
+<p><strong>Locate your <code>menu.xml</code> file</strong><br>
+Typically found at:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>~/.config/openbox/menu.xml
+</span></span></code></pre></div><p>If it&rsquo;s not there, check in <code>/etc/xdg/openbox/menu.xml</code>.</p>
+</li>
+<li>
+<p><strong>Edit the File</strong><br>
+Open it in your favorite text editor:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vim ~/.config/openbox/menu.xml
+</span></span></code></pre></div><p>Or use nano:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>nano ~/.config/openbox/menu.xml
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Add the Power Options</strong><br>
+Inside the <code>&lt;menu&gt;</code> section, add the following entries:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>&lt;item label=<span style="color:#a31515">&#34;Suspend&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;action name=<span style="color:#a31515">&#34;Execute&#34;</span>&gt;&lt;execute&gt;systemctl suspend&lt;/execute&gt;&lt;/action&gt;
+</span></span><span style="display:flex;"><span>&lt;/item&gt;
+</span></span><span style="display:flex;"><span>&lt;item label=<span style="color:#a31515">&#34;Hibernate&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;action name=<span style="color:#a31515">&#34;Execute&#34;</span>&gt;&lt;execute&gt;systemctl hibernate&lt;/execute&gt;&lt;/action&gt;
+</span></span><span style="display:flex;"><span>&lt;/item&gt;
+</span></span><span style="display:flex;"><span>&lt;item label=<span style="color:#a31515">&#34;Reboot&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;action name=<span style="color:#a31515">&#34;Execute&#34;</span>&gt;&lt;execute&gt;systemctl reboot&lt;/execute&gt;&lt;/action&gt;
+</span></span><span style="display:flex;"><span>&lt;/item&gt;
+</span></span><span style="display:flex;"><span>&lt;item label=<span style="color:#a31515">&#34;Shutdown&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;action name=<span style="color:#a31515">&#34;Execute&#34;</span>&gt;&lt;execute&gt;systemctl poweroff&lt;/execute&gt;&lt;/action&gt;
+</span></span><span style="display:flex;"><span>&lt;/item&gt;
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Apply Changes</strong><br>
+After saving the file, refresh Openbox to apply the new menu options:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>openbox --reconfigure
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="-troubleshooting">🛠️ Troubleshooting</h3>
+<ul>
+<li>If the commands don’t work, ensure you have the necessary permissions. You may need to allow non-root users to execute <code>systemctl</code> commands by modifying <code>/etc/sudoers</code>:
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo visudo
+</span></span></code></pre></div>Add:
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>your_username ALL=(ALL) NOPASSWD: /bin/systemctl suspend, /bin/systemctl hibernate, /bin/systemctl reboot, /bin/systemctl poweroff
+</span></span></code></pre></div>Then modify <code>menu.xml</code> to use:
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>&lt;execute&gt;sudo systemctl poweroff&lt;/execute&gt;
+</span></span></code></pre></div></li>
+</ul>
+<h3 id="-why-this-is-useful">🎯 Why This is Useful</h3>
+<ul>
+<li>Eliminates the need for a terminal to execute power commands.</li>
+<li>Provides a graphical way to shut down, restart, or suspend your system.</li>
+<li>Enhances workflow efficiency when using Openbox as a lightweight window manager.</li>
+</ul>
+<p>With this setup, you now have a streamlined way to manage power options directly from your Openbox menu. 🚀</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/openbox">openbox</a></li>
+							
+							<li><a href="/tags/fedora">fedora</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2025  © Copyright notice |  <a href="https://github.com/adityajoshi/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

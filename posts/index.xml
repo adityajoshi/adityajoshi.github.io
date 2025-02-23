@@ -4,11 +4,18 @@
     <title>Posts on Aditya&#39;s Corner 🚀</title>
     <link>https://adityajoshi.github.io/posts/</link>
     <description>Recent content in Posts on Aditya&#39;s Corner 🚀</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 31 Jan 2024 08:26:21 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2025 16:45:28 +0530</lastBuildDate>
     <atom:link href="https://adityajoshi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Openbox Power menu setup</title>
+      <link>https://adityajoshi.github.io/posts/openbox_power_menu_setup/</link>
+      <pubDate>Sun, 23 Feb 2025 16:45:28 +0530</pubDate>
+      <guid>https://adityajoshi.github.io/posts/openbox_power_menu_setup/</guid>
+      <description>Adding Shutdown, Restart, Suspend, and Hibernate Options in Openbox Menu If you&amp;rsquo;re using Openbox as your window manager and want quick access to power options like Shutdown, Restart, Suspend, and Hibernate, modifying the menu.xml file is a simple and effective approach.&#xA;📌 Steps to Add Power Options Locate your menu.xml file&#xA;Typically found at:&#xA;~/.config/openbox/menu.xml If it&amp;rsquo;s not there, check in /etc/xdg/openbox/menu.xml.&#xA;Edit the File&#xA;Open it in your favorite text editor:</description>
+    </item>
     <item>
       <title>git commands to manage work</title>
       <link>https://adityajoshi.github.io/posts/git_commands_to_manage_work/</link>

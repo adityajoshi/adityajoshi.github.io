@@ -14,14 +14,14 @@
       <link>https://adityajoshi.github.io/posts/git_submodule_error/</link>
       <pubDate>Mon, 19 Sep 2022 23:14:34 +0530</pubDate>
       <guid>https://adityajoshi.github.io/posts/git_submodule_error/</guid>
-      <description>At times you will maintain or use a git repo which contains another repo as a submodule. Sometimes when you update or add this submodule again you may end up error like this.&#xA;&amp;#39;main_repo/sub_repo&amp;#39; already exists in the index. To fix this run below command and try adding submodule again.&#xA;git rm -r --cached main_repo/sub_repo git submodule add --force -b main {repo_url} {folder_to_use_for_sub_repo} </description>
+      <description>&lt;p&gt;At times you will maintain or use a git repo which contains another repo as a submodule.&#xA;Sometimes when you update or add this submodule again you may end up error like this.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;#39;main_repo/sub_repo&amp;#39; already exists in the index.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To fix this run below command and try adding submodule again.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git rm -r --cached main_repo/sub_repo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git submodule add --force -b main {repo_url} {folder_to_use_for_sub_repo}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Change Git Remote URL via terminal</title>
       <link>https://adityajoshi.github.io/posts/git_change_remote_url/</link>
       <pubDate>Sun, 18 Sep 2022 12:42:54 +0530</pubDate>
       <guid>https://adityajoshi.github.io/posts/git_change_remote_url/</guid>
-      <description>I used to clone github repositories with https link. We could use our github credentials with Git command line.&#xA;However as of August 21, Github has removed support for using your account password from Git command line.&#xA;That means you either need to generate Personal Access Tokens or configure repo with ssh keys.&#xA;I prefer 2nd option and that would mean that I need to change remote url in my checkout repo.</description>
+      <description>&lt;p&gt;I used to clone github repositories with https link. We could use our github credentials with Git command line.&lt;/p&gt;&#xA;&lt;p&gt;However as of August 21, &lt;a href=&#34;https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/&#34;&gt;Github has removed support&lt;/a&gt; for using your account password from Git command line.&lt;/p&gt;&#xA;&lt;p&gt;That means you either need to generate Personal Access Tokens or configure repo with ssh keys.&lt;/p&gt;&#xA;&lt;p&gt;I prefer 2nd option and that would mean that I need to change remote url in my checkout repo.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

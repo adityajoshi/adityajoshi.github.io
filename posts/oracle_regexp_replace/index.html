@@ -8,7 +8,8 @@
   <meta itemprop="description" content="This post is to remind myself power of Oracle REGEXP_REPLACE. At time I forget how this in-build function can be used instead of writing a code!
 Few examples: Below will replace remove digits.
 WITH strings AS ( SELECT &#39;abc123&#39; s FROM dual union all SELECT &#39;123abc&#39; s FROM dual union all SELECT &#39;a1b2c3&#39; s FROM dual ) SELECT s &#34;STRING&#34;, regexp_replace(s, &#39;[0-9]&#39;, &#39;&#39;) &#34;MODIFIED_STRING&#34; FROM strings Output:
-STRING MODIFIED_STRING abc123 abc 123abc abc a1b2c3 abc Convert multiple spaces to single space.">
+STRING MODIFIED_STRING abc123 abc 123abc abc a1b2c3 abc Convert multiple spaces to single space.
+WITH strings AS ( SELECT &#39;Hello World&#39; s FROM dual union all SELECT &#39;Hello World&#39; s FROM dual union all SELECT &#39;Hello, World !&#39; s FROM dual ) SELECT s &#34;STRING&#34;, regexp_replace(s, &#39; {2,}&#39;, &#39; &#39;) &#34;MODIFIED_STRING&#34; FROM strings Output:">
   <meta itemprop="datePublished" content="2024-01-23T09:21:08+05:30">
   <meta itemprop="dateModified" content="2024-01-23T09:21:08+05:30">
   <meta itemprop="wordCount" content="268">
@@ -18,7 +19,8 @@ STRING MODIFIED_STRING abc123 abc 123abc abc a1b2c3 abc Convert multiple spaces 
   <meta property="og:description" content="This post is to remind myself power of Oracle REGEXP_REPLACE. At time I forget how this in-build function can be used instead of writing a code!
 Few examples: Below will replace remove digits.
 WITH strings AS ( SELECT &#39;abc123&#39; s FROM dual union all SELECT &#39;123abc&#39; s FROM dual union all SELECT &#39;a1b2c3&#39; s FROM dual ) SELECT s &#34;STRING&#34;, regexp_replace(s, &#39;[0-9]&#39;, &#39;&#39;) &#34;MODIFIED_STRING&#34; FROM strings Output:
-STRING MODIFIED_STRING abc123 abc 123abc abc a1b2c3 abc Convert multiple spaces to single space.">
+STRING MODIFIED_STRING abc123 abc 123abc abc a1b2c3 abc Convert multiple spaces to single space.
+WITH strings AS ( SELECT &#39;Hello World&#39; s FROM dual union all SELECT &#39;Hello World&#39; s FROM dual union all SELECT &#39;Hello, World !&#39; s FROM dual ) SELECT s &#34;STRING&#34;, regexp_replace(s, &#39; {2,}&#39;, &#39; &#39;) &#34;MODIFIED_STRING&#34; FROM strings Output:">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -31,7 +33,8 @@ STRING MODIFIED_STRING abc123 abc 123abc abc a1b2c3 abc Convert multiple spaces 
   <meta name="twitter:description" content="This post is to remind myself power of Oracle REGEXP_REPLACE. At time I forget how this in-build function can be used instead of writing a code!
 Few examples: Below will replace remove digits.
 WITH strings AS ( SELECT &#39;abc123&#39; s FROM dual union all SELECT &#39;123abc&#39; s FROM dual union all SELECT &#39;a1b2c3&#39; s FROM dual ) SELECT s &#34;STRING&#34;, regexp_replace(s, &#39;[0-9]&#39;, &#39;&#39;) &#34;MODIFIED_STRING&#34; FROM strings Output:
-STRING MODIFIED_STRING abc123 abc 123abc abc a1b2c3 abc Convert multiple spaces to single space.">
+STRING MODIFIED_STRING abc123 abc 123abc abc a1b2c3 abc Convert multiple spaces to single space.
+WITH strings AS ( SELECT &#39;Hello World&#39; s FROM dual union all SELECT &#39;Hello World&#39; s FROM dual union all SELECT &#39;Hello, World !&#39; s FROM dual ) SELECT s &#34;STRING&#34;, regexp_replace(s, &#39; {2,}&#39;, &#39; &#39;) &#34;MODIFIED_STRING&#34; FROM strings Output:">
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/main.css" />
@@ -112,26 +115,26 @@ STRING MODIFIED_STRING abc123 abc 123abc abc a1b2c3 abc Convert multiple spaces 
 </span></span><span style="display:flex;"><span><span style="color:#00f">FROM</span> strings
 </span></span></code></pre></div><p>Output:</p>
 <table>
-<thead>
-<tr>
-<th>STRING</th>
-<th>MODIFIED_STRING</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>abc123</td>
-<td>abc</td>
-</tr>
-<tr>
-<td>123abc</td>
-<td>abc</td>
-</tr>
-<tr>
-<td>a1b2c3</td>
-<td>abc</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>STRING</th>
+          <th>MODIFIED_STRING</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>abc123</td>
+          <td>abc</td>
+      </tr>
+      <tr>
+          <td>123abc</td>
+          <td>abc</td>
+      </tr>
+      <tr>
+          <td>a1b2c3</td>
+          <td>abc</td>
+      </tr>
+  </tbody>
 </table>
 </li>
 <li>
@@ -145,26 +148,26 @@ STRING MODIFIED_STRING abc123 abc 123abc abc a1b2c3 abc Convert multiple spaces 
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">FROM</span>   strings
 </span></span></code></pre></div><p>Output:</p>
 <table>
-<thead>
-<tr>
-<th>STRING</th>
-<th>MODIFIED_STRING</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Hello  World</td>
-<td>Hello World</td>
-</tr>
-<tr>
-<td>Hello        World</td>
-<td>abHello World</td>
-</tr>
-<tr>
-<td>Hello,   World  !</td>
-<td>Hello, World!</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>STRING</th>
+          <th>MODIFIED_STRING</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Hello  World</td>
+          <td>Hello World</td>
+      </tr>
+      <tr>
+          <td>Hello        World</td>
+          <td>abHello World</td>
+      </tr>
+      <tr>
+          <td>Hello,   World  !</td>
+          <td>Hello, World!</td>
+      </tr>
+  </tbody>
 </table>
 </li>
 <li>
@@ -179,26 +182,26 @@ STRING MODIFIED_STRING abc123 abc 123abc abc a1b2c3 abc Convert multiple spaces 
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">FROM</span> strings
 </span></span></code></pre></div><p>Output:</p>
 <table>
-<thead>
-<tr>
-<th>STRING</th>
-<th>MODIFIED_STRING</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AddressLine1</td>
-<td>address_line_1</td>
-</tr>
-<tr>
-<td>ZipCode</td>
-<td>zip_code</td>
-</tr>
-<tr>
-<td>Country</td>
-<td>country</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>STRING</th>
+          <th>MODIFIED_STRING</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>AddressLine1</td>
+          <td>address_line_1</td>
+      </tr>
+      <tr>
+          <td>ZipCode</td>
+          <td>zip_code</td>
+      </tr>
+      <tr>
+          <td>Country</td>
+          <td>country</td>
+      </tr>
+  </tbody>
 </table>
 </li>
 <li>
@@ -213,26 +216,26 @@ STRING MODIFIED_STRING abc123 abc 123abc abc a1b2c3 abc Convert multiple spaces 
 </span></span><span style="display:flex;"><span>        <span style="color:#00f">FROM</span> date_strings
 </span></span></code></pre></div><p>Output:</p>
 <table>
-<thead>
-<tr>
-<th>STRING</th>
-<th>MODIFIED_STRING</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2015-01-01</td>
-<td>01.01.2015</td>
-</tr>
-<tr>
-<td>2000-12-31</td>
-<td>31.12.2000</td>
-</tr>
-<tr>
-<td>900-01-01</td>
-<td>01.01.900</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>STRING</th>
+          <th>MODIFIED_STRING</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>2015-01-01</td>
+          <td>01.01.2015</td>
+      </tr>
+      <tr>
+          <td>2000-12-31</td>
+          <td>31.12.2000</td>
+      </tr>
+      <tr>
+          <td>900-01-01</td>
+          <td>01.01.900</td>
+      </tr>
+  </tbody>
 </table>
 </li>
 </ol>
@@ -250,7 +253,9 @@ STRING MODIFIED_STRING abc123 abc 123abc abc a1b2c3 abc Convert multiple spaces 
 						</ul>
 					
 				
-			</div></div>
+			</div>
+
+		</div>
 	</div>
 	<div class="footer wrapper">
 	<nav class="nav">

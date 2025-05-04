@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>How I Launch Applications in Fullscreen with Openbox - Aditya&#39;s Corner 🚀</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <meta itemprop="name" content="How I Launch Applications in Fullscreen with Openbox">
+  <meta itemprop="description" content="The Goal to have specific applications—like Firefox, VLC, or others—to always start in fullscreen when launched in Openbox. I don’t want to press keys or click buttons every time. I want it automated, clean, declarative.
+Step 1: Find the Window Class Before Openbox can apply rules to an app, it needs to know how to identify the app’s window.
+To discover this, I use xprop:
+xprop | grep WM_CLASS I click the app window. This command returns something like:">
+  <meta itemprop="datePublished" content="2025-05-04T00:49:41+05:30">
+  <meta itemprop="dateModified" content="2025-05-04T00:49:41+05:30">
+  <meta itemprop="wordCount" content="184">
+  <meta itemprop="keywords" content="Openbox,Fedora"><meta property="og:url" content="https://adityajoshi.github.io/posts/launch_full_screen_apps_openbox/">
+  <meta property="og:site_name" content="Aditya&#39;s Corner 🚀">
+  <meta property="og:title" content="How I Launch Applications in Fullscreen with Openbox">
+  <meta property="og:description" content="The Goal to have specific applications—like Firefox, VLC, or others—to always start in fullscreen when launched in Openbox. I don’t want to press keys or click buttons every time. I want it automated, clean, declarative.
+Step 1: Find the Window Class Before Openbox can apply rules to an app, it needs to know how to identify the app’s window.
+To discover this, I use xprop:
+xprop | grep WM_CLASS I click the app window. This command returns something like:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-05-04T00:49:41+05:30">
+    <meta property="article:modified_time" content="2025-05-04T00:49:41+05:30">
+    <meta property="article:tag" content="Openbox">
+    <meta property="article:tag" content="Fedora">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How I Launch Applications in Fullscreen with Openbox">
+  <meta name="twitter:description" content="The Goal to have specific applications—like Firefox, VLC, or others—to always start in fullscreen when launched in Openbox. I don’t want to press keys or click buttons every time. I want it automated, clean, declarative.
+Step 1: Find the Window Class Before Openbox can apply rules to an app, it needs to know how to identify the app’s window.
+To discover this, I use xprop:
+xprop | grep WM_CLASS I click the app window. This command returns something like:">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://adityajoshi.github.io/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://adityajoshi.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://adityajoshi.github.io/">
+				<img src="https://img.freepik.com/free-vector/lightbulb-illustration_24908-57936.jpg" alt="Aditya&#39;s Corner 🚀" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://adityajoshi.github.io/">Aditya&#39;s Corner 🚀</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/adityajoshi/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">Posts</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">04</span>
+							<span class="rest">May 2025</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">How I Launch Applications in Fullscreen with Openbox</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<hr>
+<p>The Goal to have specific applications—like Firefox, VLC, or others—to <strong>always start in fullscreen</strong> when launched in Openbox.
+I don’t want to press keys or click buttons every time. I want it automated, clean, declarative.</p>
+<hr>
+<h3 id="step-1-find-the-window-class">Step 1: Find the Window Class</h3>
+<p>Before Openbox can apply rules to an app, it needs to know how to identify the app’s window.</p>
+<p>To discover this, I use <code>xprop</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>xprop | grep WM_CLASS
+</span></span></code></pre></div><p>I click the app window. This command returns something like:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>WM_CLASS(STRING) = <span style="color:#a31515">&#34;urxvt&#34;</span>, <span style="color:#a31515">&#34;URxvt&#34;</span>
+</span></span></code></pre></div><p>In this case, &ldquo;urxvt&rdquo; and &ldquo;URxvt&rdquo; is the window’s class name. That’s the identifier Openbox needs.
+Important: It’s usually the first string (here, &ldquo;urxvt&rdquo;) that Openbox uses in rc.xml. Write this name down.</p>
+<h3 id="step-2-configure-openbox">Step 2: Configure Openbox</h3>
+<p>I edit the Openbox configuration file:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim ~/.config/openbox/rc.xml
+</span></span></code></pre></div><p>Inside the <em>applications</em> tag, I add this:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>&lt;application name=<span style="color:#a31515">&#34;urxvt&#34;</span>&gt;   
+</span></span><span style="display:flex;"><span>  &lt;fullscreen&gt;yes&lt;/fullscreen&gt; 
+</span></span><span style="display:flex;"><span>&lt;/application&gt;
+</span></span></code></pre></div><p>Replace &ldquo;urxvt&rdquo; with the name you got from xprop.</p>
+<h3 id="step-3-reload-openbox">Step 3: Reload Openbox</h3>
+<p>After saving the file, I apply the new config:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>openbox --reconfigure
+</span></span></code></pre></div><p>Now, every time I launch urxvt (or whatever app I configured), it will automatically open in fullscreen.
+No more manual toggling.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/openbox">openbox</a></li>
+							
+							<li><a href="/tags/fedora">fedora</a></li>
+							
+						</ul>
+					
+				
+			</div>
+
+		</div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2025  © Copyright notice |  <a href="https://github.com/adityajoshi/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

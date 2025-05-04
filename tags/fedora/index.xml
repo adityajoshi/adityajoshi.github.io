@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 23 Feb 2025 16:45:28 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 04 May 2025 00:49:41 +0530</lastBuildDate>
     <atom:link href="https://adityajoshi.github.io/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Launch Applications in Fullscreen with Openbox</title>
+      <link>https://adityajoshi.github.io/posts/launch_full_screen_apps_openbox/</link>
+      <pubDate>Sun, 04 May 2025 00:49:41 +0530</pubDate>
+      <guid>https://adityajoshi.github.io/posts/launch_full_screen_apps_openbox/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;The Goal to have specific applications—like Firefox, VLC, or others—to &lt;strong&gt;always start in fullscreen&lt;/strong&gt; when launched in Openbox.&#xA;I don’t want to press keys or click buttons every time. I want it automated, clean, declarative.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;step-1-find-the-window-class&#34;&gt;Step 1: Find the Window Class&lt;/h3&gt;&#xA;&lt;p&gt;Before Openbox can apply rules to an app, it needs to know how to identify the app’s window.&lt;/p&gt;&#xA;&lt;p&gt;To discover this, I use &lt;code&gt;xprop&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xprop | grep WM_CLASS&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I click the app window. This command returns something like:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Openbox Power menu setup</title>
       <link>https://adityajoshi.github.io/posts/openbox_power_menu_setup/</link>

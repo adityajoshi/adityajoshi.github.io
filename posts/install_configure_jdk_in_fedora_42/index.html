@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Install Configure JDK in Fedora 42 - Aditya&#39;s Corner 🚀</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <meta itemprop="name" content="Install Configure JDK in Fedora 42">
+  <meta itemprop="description" content="Fedora 42 ships with bleeding-edge tech, but if you’re a Java developer who wants to run the latest LTS version (Java 21)—or switch between Oracle JDK and OpenJDK—you’ll need to get your hands a bit dirty.
+In this guide, we’ll cover:
+✅ Installing OpenJDK 21 using DNF (Fedora’s package manager) ✅ Installing Oracle JDK 21 manually from Oracle’s site ✅ Switching between Java versions using the alternatives command Let’s dive in.">
+  <meta itemprop="datePublished" content="2025-05-14T07:41:50+05:30">
+  <meta itemprop="dateModified" content="2025-05-14T07:41:50+05:30">
+  <meta itemprop="wordCount" content="371"><meta property="og:url" content="https://adityajoshi.github.io/posts/install_configure_jdk_in_fedora_42/">
+  <meta property="og:site_name" content="Aditya&#39;s Corner 🚀">
+  <meta property="og:title" content="Install Configure JDK in Fedora 42">
+  <meta property="og:description" content="Fedora 42 ships with bleeding-edge tech, but if you’re a Java developer who wants to run the latest LTS version (Java 21)—or switch between Oracle JDK and OpenJDK—you’ll need to get your hands a bit dirty.
+In this guide, we’ll cover:
+✅ Installing OpenJDK 21 using DNF (Fedora’s package manager) ✅ Installing Oracle JDK 21 manually from Oracle’s site ✅ Switching between Java versions using the alternatives command Let’s dive in.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-05-14T07:41:50+05:30">
+    <meta property="article:modified_time" content="2025-05-14T07:41:50+05:30">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Install Configure JDK in Fedora 42">
+  <meta name="twitter:description" content="Fedora 42 ships with bleeding-edge tech, but if you’re a Java developer who wants to run the latest LTS version (Java 21)—or switch between Oracle JDK and OpenJDK—you’ll need to get your hands a bit dirty.
+In this guide, we’ll cover:
+✅ Installing OpenJDK 21 using DNF (Fedora’s package manager) ✅ Installing Oracle JDK 21 manually from Oracle’s site ✅ Switching between Java versions using the alternatives command Let’s dive in.">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://adityajoshi.github.io/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://adityajoshi.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://adityajoshi.github.io/">
+				<img src="https://img.freepik.com/free-vector/lightbulb-illustration_24908-57936.jpg" alt="Aditya&#39;s Corner 🚀" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://adityajoshi.github.io/">Aditya&#39;s Corner 🚀</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/adityajoshi/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">Posts</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">14</span>
+							<span class="rest">May 2025</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Install Configure JDK in Fedora 42</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<hr>
+<p>Fedora 42 ships with bleeding-edge tech, but if you&rsquo;re a Java developer who wants to run the <strong>latest LTS version (Java 21)</strong>—or switch between Oracle JDK and OpenJDK—you’ll need to get your hands a bit dirty.</p>
+<p>In this guide, we’ll cover:</p>
+<ul>
+<li>✅ Installing <strong>OpenJDK 21</strong> using DNF (Fedora’s package manager)</li>
+<li>✅ Installing <strong>Oracle JDK 21</strong> manually from Oracle’s site</li>
+<li>✅ Switching between Java versions using the <code>alternatives</code> command</li>
+</ul>
+<p>Let’s dive in.</p>
+<hr>
+<h2 id="-prerequisites">🧰 Prerequisites</h2>
+<p>Make sure you’re running <strong>Fedora 42</strong>, and you’ve got <code>sudo</code> privileges. Open your terminal and run:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat /etc/fedora-release
+</span></span></code></pre></div><p>You should see something like:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Fedora release 42 (Adams)
+</span></span></code></pre></div><hr>
+<h2 id="-install-openjdk-21-using-dnf">🔧 Install OpenJDK 21 using DNF</h2>
+<p>Fedora’s default repositories offer OpenJDK 21. Run:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf install java-21-openjdk java-21-openjdk-devel
+</span></span></code></pre></div><p>Verify installation:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -version
+</span></span></code></pre></div><p>Expected output:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>openjdk version &#34;21&#34; ...
+</span></span></code></pre></div><hr>
+<h2 id="-install-oracle-jdk-21-manual">☕ Install Oracle JDK 21 (Manual)</h2>
+<p>Oracle JDK isn’t in Fedora’s repos due to licensing, so we’ll do a manual install.</p>
+<h3 id="step-1-download-oracle-jdk-21">Step 1: Download Oracle JDK 21</h3>
+<p>Go to Oracle’s official JDK page:
+👉 <a href="https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html">https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html</a></p>
+<p>Download the RPM file</p>
+<h3 id="step-2-extract-and-move-to-opt">Step 2: Extract and Move to <code>/opt</code></h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~/Downloads
+</span></span><span style="display:flex;"><span>sudo rpm -Uhv jdk*-linux-x64_bin.rpm
+</span></span></code></pre></div><p>(replace actual file name)</p>
+<hr>
+<h2 id="-switching-between-java-versions-with-alternatives">🔄 Switching Between Java Versions with <code>alternatives</code></h2>
+<p>Fedora uses <code>alternatives</code> to manage multiple versions of the same tool.</p>
+<h3 id="use-alternatives-to-choose-your-default">Use <code>alternatives</code> to Choose Your Default</h3>
+<p>To select which Java runtime you want:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo alternatives --config java
+</span></span></code></pre></div><p>You’ll see:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>There are 2 programs which provide &#39;java&#39;.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  Selection    Command
+</span></span><span style="display:flex;"><span>-----------------------------------------------
+</span></span><span style="display:flex;"><span>*+ 1           /usr/lib/jvm/java-21-openjdk/bin/java
+</span></span><span style="display:flex;"><span>   2           /opt/jdk-21/bin/java
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Enter to keep the current selection[+], or type selection number:
+</span></span></code></pre></div><p>Choose the one you want. Repeat the same for <code>javac</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo alternatives --config javac
+</span></span></code></pre></div><hr>
+<h2 id="-verify-it-works">✅ Verify It Works</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -version
+</span></span><span style="display:flex;"><span>javac -version
+</span></span></code></pre></div><p>You should now see whichever JDK you selected as the output.</p>
+<hr>
+<h2 id="-pro-tip-set-java_home-in-bashrc-or-zshrc">📌 Pro Tip: Set <code>JAVA_HOME</code> in <code>.bashrc</code> or <code>.zshrc</code></h2>
+<p>Add this to your shell config to avoid issues with Maven, Gradle, etc.</p>
+<p>For Oracle JDK:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export JAVA_HOME=/opt/jdk-21
+</span></span><span style="display:flex;"><span>export PATH=$JAVA_HOME/bin:$PATH
+</span></span></code></pre></div><p>For OpenJDK:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+</span></span><span style="display:flex;"><span>export PATH=$JAVA_HOME/bin:$PATH
+</span></span></code></pre></div><p>Then:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source ~/.bashrc  <span style="color:#008000"># or ~/.zshrc</span>
+</span></span></code></pre></div><hr>
+<h2 id="-wrapping-up">🚀 Wrapping Up</h2>
+<p>You now have both <strong>OpenJDK 21</strong> and <strong>Oracle JDK 21</strong> installed on Fedora 42, and you know how to switch between them cleanly using <code>alternatives</code>.</p>
+<p>If you’re working on different projects or enterprise apps that require Oracle JDK, this setup gives you flexibility without compromising the Fedora way.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+				
+			</div>
+
+		</div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2025  © Copyright notice |  <a href="https://github.com/adityajoshi/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

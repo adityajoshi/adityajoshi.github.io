@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 04 May 2025 00:49:41 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 14 May 2025 07:41:50 +0530</lastBuildDate>
     <atom:link href="https://adityajoshi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Configure JDK in Fedora 42</title>
+      <link>https://adityajoshi.github.io/posts/install_configure_jdk_in_fedora_42/</link>
+      <pubDate>Wed, 14 May 2025 07:41:50 +0530</pubDate>
+      <guid>https://adityajoshi.github.io/posts/install_configure_jdk_in_fedora_42/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;Fedora 42 ships with bleeding-edge tech, but if you&amp;rsquo;re a Java developer who wants to run the &lt;strong&gt;latest LTS version (Java 21)&lt;/strong&gt;—or switch between Oracle JDK and OpenJDK—you’ll need to get your hands a bit dirty.&lt;/p&gt;&#xA;&lt;p&gt;In this guide, we’ll cover:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✅ Installing &lt;strong&gt;OpenJDK 21&lt;/strong&gt; using DNF (Fedora’s package manager)&lt;/li&gt;&#xA;&lt;li&gt;✅ Installing &lt;strong&gt;Oracle JDK 21&lt;/strong&gt; manually from Oracle’s site&lt;/li&gt;&#xA;&lt;li&gt;✅ Switching between Java versions using the &lt;code&gt;alternatives&lt;/code&gt; command&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Let’s dive in.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How I Launch Applications in Fullscreen with Openbox</title>
       <link>https://adityajoshi.github.io/posts/launch_full_screen_apps_openbox/</link>

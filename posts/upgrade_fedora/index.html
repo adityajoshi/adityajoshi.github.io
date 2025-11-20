@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>How to Upgrade Fedora Linux - Aditya&#39;s Corner 🚀</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <meta itemprop="name" content="How to Upgrade Fedora Linux">
+  <meta itemprop="description" content="Fedora Linux releases new versions approximately every six months. Upgrading your system is generally a straightforward process, but it’s crucial to follow the correct steps to ensure a smooth transition and avoid potential issues. This guide will walk you through the recommended way to upgrade your Fedora system from one major version to the next.
+⚠️ Prerequisites &amp; Preparation Before you begin the upgrade process, it’s essential to prepare your system to minimize any risks.">
+  <meta itemprop="datePublished" content="2025-11-20T10:00:00+05:30">
+  <meta itemprop="dateModified" content="2025-11-20T10:00:00+05:30">
+  <meta itemprop="wordCount" content="551">
+  <meta itemprop="keywords" content="Fedora,Linux,Upgrade"><meta property="og:url" content="https://adityajoshi.github.io/posts/upgrade_fedora/">
+  <meta property="og:site_name" content="Aditya&#39;s Corner 🚀">
+  <meta property="og:title" content="How to Upgrade Fedora Linux">
+  <meta property="og:description" content="Fedora Linux releases new versions approximately every six months. Upgrading your system is generally a straightforward process, but it’s crucial to follow the correct steps to ensure a smooth transition and avoid potential issues. This guide will walk you through the recommended way to upgrade your Fedora system from one major version to the next.
+⚠️ Prerequisites &amp; Preparation Before you begin the upgrade process, it’s essential to prepare your system to minimize any risks.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-20T10:00:00+05:30">
+    <meta property="article:modified_time" content="2025-11-20T10:00:00+05:30">
+    <meta property="article:tag" content="Fedora">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Upgrade">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How to Upgrade Fedora Linux">
+  <meta name="twitter:description" content="Fedora Linux releases new versions approximately every six months. Upgrading your system is generally a straightforward process, but it’s crucial to follow the correct steps to ensure a smooth transition and avoid potential issues. This guide will walk you through the recommended way to upgrade your Fedora system from one major version to the next.
+⚠️ Prerequisites &amp; Preparation Before you begin the upgrade process, it’s essential to prepare your system to minimize any risks.">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adityajoshi.github.io/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://adityajoshi.github.io/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://adityajoshi.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://adityajoshi.github.io/">
+				<img src="https://img.freepik.com/free-vector/lightbulb-illustration_24908-57936.jpg" alt="Aditya&#39;s Corner 🚀" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://adityajoshi.github.io/">Aditya&#39;s Corner 🚀</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/adityajoshi/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">Posts</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">20</span>
+							<span class="rest">Nov 2025</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">How to Upgrade Fedora Linux</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>Fedora Linux releases new versions approximately every six months. Upgrading your system is generally a straightforward process, but it&rsquo;s crucial to follow the correct steps to ensure a smooth transition and avoid potential issues. This guide will walk you through the recommended way to upgrade your Fedora system from one major version to the next.</p>
+<hr>
+<h2 id="-prerequisites--preparation">⚠️ Prerequisites &amp; Preparation</h2>
+<p>Before you begin the upgrade process, it&rsquo;s essential to prepare your system to minimize any risks.</p>
+<h3 id="1-update-your-current-system">1. Update Your Current System</h3>
+<p>Ensure your current Fedora installation is fully updated.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf upgrade --refresh
+</span></span></code></pre></div><h3 id="2-clean-up-old-packages-optional-but-recommended">2. Clean Up Old Packages (Optional but Recommended)</h3>
+<p>Remove any old or unnecessary packages.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf autoremove
+</span></span><span style="display:flex;"><span>sudo dnf clean all
+</span></span></code></pre></div><h3 id="3-backup-your-important-data">3. Backup Your Important Data</h3>
+<p><strong>This is the most critical step.</strong> Before any major system change, always back up your personal files, dotfiles, and any critical configuration files. You can use tools like <code>rsync</code>, <code>Déjà Dup</code>, or simply copy them to an external drive.</p>
+<h3 id="4-disable-third-party-repositories-temporarily">4. Disable Third-Party Repositories (Temporarily)</h3>
+<p>Third-party repositories can sometimes cause conflicts during an upgrade. It&rsquo;s best to disable them temporarily and re-enable them after the upgrade is complete.</p>
+<p>You can list enabled repositories with:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf repolist enabled
+</span></span></code></pre></div><p>To disable a repository, you can either edit its <code>.repo</code> file in <code>/etc/yum.repos.d/</code> and set <code>enabled=0</code>, or use <code>dnf config-manager</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf config-manager --set-disabled &lt;repo-name&gt;
+</span></span></code></pre></div><hr>
+<h2 id="-the-upgrade-process">🚀 The Upgrade Process</h2>
+<p>Fedora recommends using the <code>dnf system-upgrade</code> plugin for major version upgrades.</p>
+<h3 id="1-install-the-dnf-system-upgrade-plugin">1. Install the DNF System Upgrade Plugin</h3>
+<p>If you don&rsquo;t already have it, install the plugin:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf install dnf-plugin-system-upgrade
+</span></span></code></pre></div><h3 id="2-download-the-new-release-packages">2. Download the New Release Packages</h3>
+<p>Replace <code>FEDORA_VERSION</code> with the target Fedora release number (e.g., <code>43</code>).</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf system-upgrade download --releasever=FEDORA_VERSION
+</span></span></code></pre></div><p>This command will download all the necessary packages for the new Fedora version. If there are any dependency issues, <code>dnf</code> will notify you and provide solutions. You might need to add <code>--allowerasing</code> if there are conflicts with packages that need to be removed, but use this with caution.</p>
+<h3 id="3-reboot-and-upgrade">3. Reboot and Upgrade</h3>
+<p>Once all packages are downloaded, initiate the upgrade by rebooting your system.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf system-upgrade reboot
+</span></span></code></pre></div><p>Your system will reboot into a special environment to perform the upgrade. This process can take a significant amount of time, depending on your internet speed and system specifications. <strong>Do not interrupt the process.</strong></p>
+<hr>
+<h2 id="-post-upgrade-steps">✅ Post-Upgrade Steps</h2>
+<p>After your system reboots into the new Fedora version, there are a few things you should do.</p>
+<h3 id="1-verify-the-upgrade">1. Verify the Upgrade</h3>
+<p>Check your Fedora version to confirm the upgrade was successful:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat /etc/fedora-release
+</span></span></code></pre></div><h3 id="2-re-enable-third-party-repositories">2. Re-enable Third-Party Repositories</h3>
+<p>Re-enable any third-party repositories you disabled earlier.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf config-manager --set-enabled &lt;repo-name&gt;
+</span></span></code></pre></div><p>Then, perform another update to pull in any packages from these repositories for the new Fedora version:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf upgrade --refresh
+</span></span></code></pre></div><h3 id="3-clean-up-optional">3. Clean Up (Optional)</h3>
+<p>You might want to remove any old kernel versions or orphaned packages:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf autoremove
+</span></span></code></pre></div><hr>
+<h2 id="troubleshooting-common-issues">Troubleshooting Common Issues</h2>
+<ul>
+<li><strong>Dependency Conflicts:</strong> If <code>dnf system-upgrade download</code> fails due to dependency issues, try to identify the problematic packages and remove them. The <code>--allowerasing</code> option can help, but ensure you understand what it&rsquo;s removing.</li>
+<li><strong>Boot Issues:</strong> If your system fails to boot after the upgrade, you can try booting into an older kernel from the GRUB menu or a live USB to troubleshoot.</li>
+</ul>
+<hr>
+<p>Upgrading Fedora is a relatively smooth process if you follow these steps carefully. Enjoy your updated system!</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/fedora">fedora</a></li>
+							
+							<li><a href="/tags/linux">linux</a></li>
+							
+							<li><a href="/tags/upgrade">upgrade</a></li>
+							
+						</ul>
+					
+				
+			</div>
+
+		</div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2025  © Copyright notice |  <a href="https://github.com/adityajoshi/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

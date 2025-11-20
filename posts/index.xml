@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 14 May 2025 07:41:50 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 20 Nov 2025 10:00:00 +0530</lastBuildDate>
     <atom:link href="https://adityajoshi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Upgrade Fedora Linux</title>
+      <link>https://adityajoshi.github.io/posts/upgrade_fedora/</link>
+      <pubDate>Thu, 20 Nov 2025 10:00:00 +0530</pubDate>
+      <guid>https://adityajoshi.github.io/posts/upgrade_fedora/</guid>
+      <description>&lt;p&gt;Fedora Linux releases new versions approximately every six months. Upgrading your system is generally a straightforward process, but it&amp;rsquo;s crucial to follow the correct steps to ensure a smooth transition and avoid potential issues. This guide will walk you through the recommended way to upgrade your Fedora system from one major version to the next.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-prerequisites--preparation&#34;&gt;⚠️ Prerequisites &amp;amp; Preparation&lt;/h2&gt;&#xA;&lt;p&gt;Before you begin the upgrade process, it&amp;rsquo;s essential to prepare your system to minimize any risks.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Install Configure JDK in Fedora 42</title>
       <link>https://adityajoshi.github.io/posts/install_configure_jdk_in_fedora_42/</link>
